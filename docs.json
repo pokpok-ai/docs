@@ -1,0 +1,113 @@
+{
+  "$schema": "https://mintlify.com/docs.json",
+  "name": "PokPok",
+  "theme": "maple",
+  "logo": {
+    "light": "https://media.brand.dev/0e68d447-508b-4314-afde-c43351ed580a.svg",
+    "dark": "https://media.brand.dev/0e68d447-508b-4314-afde-c43351ed580a.svg"
+  },
+  "favicon": "https://media.brand.dev/9fb43ae7-680e-4b4f-bd14-ba14c3a878f8.jpg",
+  "colors": {
+    "primary": "#eae14c",
+    "light": "#0d3d42",
+    "dark": "#848c9c"
+  },
+  "font": {
+    "headings": {
+      "family": "JetBrains Mono"
+    },
+    "body": {
+      "family": "JetBrains Mono"
+    }
+  },
+  "navbar": {
+    "primary": {
+      "type": "button",
+      "label": "Get Started",
+      "href": "https://pokpok.ai"
+    }
+  },
+  "navigation": {
+    "tabs": [
+      {
+        "tab": "Documentation",
+        "groups": [
+          {
+            "group": "Get Started",
+            "pages": [
+              "introduction",
+              "how-it-works",
+              "quickstart"
+            ]
+          },
+          {
+            "group": "Core Concepts",
+            "pages": [
+              "concepts/hi-vs-ai",
+              "concepts/brand-markers",
+              "concepts/scoring"
+            ]
+          },
+          {
+            "group": "Analyse",
+            "pages": [
+              "analyse/overview",
+              "analyse/pokpok-index",
+              "analyse/category-perception",
+              "analyse/customer-experience"
+            ]
+          },
+          {
+            "group": "Diagnose",
+            "pages": [
+              "diagnose/overview",
+              "diagnose/xray",
+              "diagnose/brand-perception",
+              "diagnose/brand-alignment",
+              "diagnose/customer-experience"
+            ]
+          },
+          {
+            "group": "Treat",
+            "pages": [
+              "treat/overview"
+            ]
+          },
+          {
+            "group": "Account & Billing",
+            "pages": [
+              "account/plans-and-pricing",
+              "account/credits",
+              "account/managing-reports"
+            ]
+          }
+        ]
+      },
+      {
+        "tab": "Integrations",
+        "groups": [
+          {
+            "group": "Claude MCP",
+            "pages": [
+              "integrations/mcp-overview",
+              "integrations/mcp-setup",
+              "integrations/mcp-queries"
+            ]
+          },
+          {
+            "group": "Support",
+            "pages": [
+              "support/faq",
+              "support/privacy"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "fonts": {
+    "heading": {
+      "family": "Instrument Serif"
+    }
+  }
+}

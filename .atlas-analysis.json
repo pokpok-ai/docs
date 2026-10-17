@@ -1,0 +1,109 @@
+{
+  "projectType": "saas",
+  "projectName": "Pokpok",
+  "projectDescription": "Pokpok is an AI-powered brand perception intelligence platform that diagnoses the gap between how humans and AI models perceive your brand — delivering actionable reports in 72 hours at a fraction of legacy research costs.",
+  "theme": "luma",
+  "primaryColor": "#eae14c",
+  "lightColor": "#0d3d42",
+  "darkColor": "#848c9c",
+  "navigation": {
+    "tabs": [
+      {
+        "tab": "Documentation",
+        "groups": [
+          {
+            "group": "Get Started",
+            "pages": [
+              "introduction",
+              "how-it-works",
+              "quickstart"
+            ]
+          },
+          {
+            "group": "Core Concepts",
+            "pages": [
+              "concepts/hi-vs-ai",
+              "concepts/brand-markers",
+              "concepts/scoring"
+            ]
+          },
+          {
+            "group": "Analyse",
+            "pages": [
+              "analyse/overview",
+              "analyse/pokpok-index",
+              "analyse/category-perception",
+              "analyse/customer-experience"
+            ]
+          },
+          {
+            "group": "Diagnose",
+            "pages": [
+              "diagnose/overview",
+              "diagnose/xray",
+              "diagnose/brand-perception",
+              "diagnose/brand-alignment",
+              "diagnose/customer-experience"
+            ]
+          },
+          {
+            "group": "Treat",
+            "pages": [
+              "treat/overview"
+            ]
+          },
+          {
+            "group": "Account & Billing",
+            "pages": [
+              "account/plans-and-pricing",
+              "account/credits",
+              "account/managing-reports"
+            ]
+          }
+        ]
+      },
+      {
+        "tab": "Integrations",
+        "groups": [
+          {
+            "group": "Claude MCP",
+            "pages": [
+              "integrations/mcp-overview",
+              "integrations/mcp-setup",
+              "integrations/mcp-queries"
+            ]
+          },
+          {
+            "group": "Support",
+            "pages": [
+              "support/faq",
+              "support/privacy"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "keyFeatures": [
+    "X-RAY free scanner — instant HI vs AI perception gap for any URL, 6 metrics, results in ~60 seconds",
+    "Brand Perception Truth — deep 17-marker analysis of your brand across two perception lenses (human + AI)",
+    "Brand Alignment Truth — compares your Brand Book, website, and Amazon PDP for consistency gaps",
+    "Category Perception Truth — monthly subscription scanning 15 category leaders across 17 brand markers",
+    "POKPOK Index — weekly intelligence briefing ranking the top 100 Amazon movers by trajectory",
+    "5 Uncomfortable Truths — AI-generated strategic insights surfacing white space and oversaturated positioning",
+    "Credit system — 3 anonymous scans, +1 on sign-in, +3 on share, up to 7 free X-RAY scans",
+    "Claude MCP connector — direct read-only access to POKPOK brand perception data inside Claude",
+    "GenAI Treatment (coming soon) — AI-powered content and gallery rebuilds from diagnosed gaps",
+    "€150 next-day reports vs €5K+ legacy research"
+  ],
+  "publicApiSurface": [
+    "X-RAY scan (POST /scan-url-v2) — submit any URL, returns 6 HI+AI metrics + diagnosis labels",
+    "pokpok_about MCP tool — describes POKPOK AI Score and available data tables",
+    "pokpok_list_tables MCP tool — lists all 28 public Postgres tables and columns",
+    "pokpok_query MCP tool — runs a read-only SELECT query against brand perception data",
+    "polar-checkout edge function — creates a Polar checkout session for paid reports",
+    "polar-customer-portal edge function — generates a customer portal session token",
+    "share-og edge function — serves dynamic OG metadata for shared X-RAY results",
+    "claim-share-bonus edge function — awards +3 credits on first share action"
+  ]
+}

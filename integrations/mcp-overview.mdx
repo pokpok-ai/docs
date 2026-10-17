@@ -1,0 +1,45 @@
+---
+title: "Pokpok MCP: Query Brand Perception Data Inside Claude"
+sidebarTitle: "MCP Overview"
+description: "The Pokpok MCP integration lets you ask Claude natural-language questions about brand perception data — scores, categories, and market positioning."
+---
+
+The Pokpok MCP (Model Context Protocol) integration lets you query Pokpok's brand perception database directly inside Claude — asking natural-language questions about brand markers, saturation scores, and category intelligence. Instead of exporting data and building spreadsheets, you can ask Claude questions and get structured answers drawn from Pokpok's live brand perception database.
+
+## What Is MCP?
+
+MCP is Anthropic's open standard for giving AI assistants access to external data sources. It works like a secure bridge between Claude and an external service — Claude can call tools exposed by the MCP server, retrieve data, and reason over it in the same conversation. The Pokpok MCP server exposes brand perception data to Claude as a set of read-only tools, so Claude can query the database on your behalf without you ever leaving the chat interface.
+
+## What You Can Do
+
+<CardGroup cols={3}>
+  <Card title="Ask Natural-Language Questions" icon="message">
+    Query brand perception data in plain English. No technical knowledge required — Claude translates your question into a query and returns the results.
+  </Card>
+  <Card title="Compare Across Categories" icon="chart-bar">
+    Compare saturation scores across brand markers and categories, or benchmark individual brands against category leaders.
+  </Card>
+  <Card title="Explore Category Positioning" icon="binoculars">
+    Investigate how category leaders are positioned across the 17 brand perception markers without leaving your Claude conversation.
+  </Card>
+</CardGroup>
+
+## Available MCP Tools
+
+| Tool | What It Does |
+|---|---|
+| `pokpok_about` | Explains the POKPOK AI Score and data model — a good starting point to understand what data is available |
+| `pokpok_list_tables` | Lists all available brand perception data tables and their columns |
+| `pokpok_query` | Runs a read-only query against Pokpok's brand perception database and returns results |
+
+## Safety and Limits
+
+The Pokpok MCP server is read-only. You cannot write, update, or delete any data through the integration. Each query is subject to a **1,000 row maximum** and a **5-second timeout** — ask Claude to focus your question on a specific category or set of brands to keep results fast and readable.
+
+<Note>
+  **Pilot feature.** The Pokpok MCP is currently free with no authentication required. Future versions will require a Pokpok subscription and will authenticate via OAuth 2.1.
+</Note>
+
+<Card title="Set Up the MCP Connector" icon="plug" href="/integrations/mcp-setup">
+  Ready to connect? The setup takes about two minutes in either claude.ai or Claude Desktop.
+</Card>

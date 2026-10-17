@@ -1,0 +1,53 @@
+---
+title: "Asking Claude About Brand Perception Data via Pokpok MCP"
+sidebarTitle: "MCP Queries"
+description: "Ask Claude natural-language questions about brand perception scores, category saturation, and market positioning — Pokpok MCP handles the data retrieval."
+---
+
+Once your Pokpok MCP connector is set up in Claude, you can ask natural-language questions to explore brand perception data across categories, markers, and individual brands. Claude handles translating your question into a data query — you just need to know what you want to find out.
+
+## Example Questions to Ask Claude
+
+Try these prompts to get started. Claude will use the Pokpok connector to retrieve and interpret the results.
+
+<AccordionGroup>
+  <Accordion title="Category White Space">
+    - "Which brand markers are least saturated in the moisturizer category?"
+    - "Where is the white space in skincare based on current saturation scores?"
+    - "What are the 5 Uncomfortable Truths for the moisturizer category this month?"
+  </Accordion>
+  <Accordion title="Brand Rankings and Scores">
+    - "Show me the top 15 brands in skincare sorted by overall perception score"
+    - "Compare the AI Findability scores across brands Pokpok has scanned"
+    - "Which brands score highest on Emotional Benefits vs Functional Benefits?"
+  </Accordion>
+  <Accordion title="Category Leader Analysis">
+    - "What archetypes are most common among category leaders in [your category]?"
+    - "Compare brand archetypes across the 15 category leaders in moisturizers"
+    - "Show me all Category Perception Truth reports for skincare"
+  </Accordion>
+  <Accordion title="Marker Deep Dives">
+    - "Show me the saturation scores for all 17 markers in skincare"
+    - "Which perception markers are most competitive in my category?"
+    - "What is the average AI score for brands in the premium skincare segment?"
+  </Accordion>
+</AccordionGroup>
+
+## How It Works
+
+When you ask Claude a question about brand perception data, it uses the Pokpok connector to retrieve the relevant data and returns the results directly into your conversation. Claude then interprets the data and presents it in a readable format — you never need to think about the underlying data structure.
+
+The connection is entirely read-only — no data can be written, updated, or deleted. Results are capped at 1,000 rows per question to keep responses fast. If you ask a very broad question, Claude may automatically narrow the scope or suggest you refine your question to a specific category or time period.
+
+## Limits at a Glance
+
+| Constraint | Detail |
+|---|---|
+| Query type | Read-only data retrieval |
+| Maximum rows returned | 1,000 per question |
+| Response timeout | 5 seconds |
+| Write operations | Not permitted |
+
+<Tip>
+  Ask Claude to interpret results for you — *"Based on these saturation scores, where is the white space in skincare?"* — rather than just requesting raw data. Claude can reason over the results and surface actionable insights in the same response.
+</Tip>

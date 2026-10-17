@@ -1,0 +1,76 @@
+---
+title: "Pokpok MCP Setup: Connect to Claude in Two Minutes"
+sidebarTitle: "MCP Setup"
+description: "Add the Pokpok MCP connector to claude.ai or Claude Desktop in two minutes — no API key or authentication required during the pilot."
+---
+
+Setting up the Pokpok MCP connector takes about two minutes. Once connected, you can ask Claude natural-language questions about brand perception data — saturation scores, category leaders, brand archetypes, and more — without leaving your conversation.
+
+## Setup in claude.ai
+
+<Steps>
+  <Step title="Open Settings">
+    Go to [claude.ai](https://claude.ai) and sign in. Click your profile icon in the top-right corner, then select **Settings**.
+  </Step>
+  <Step title="Navigate to Connectors">
+    In the Settings panel, select the **Connectors** tab.
+  </Step>
+  <Step title="Add a custom connector">
+    Click **Add connector**, then select **Custom** from the options.
+  </Step>
+  <Step title="Enter the Pokpok MCP URL">
+    In the connector URL field, enter:
+    ```
+    https://mcp.pokpok.ai
+    ```
+  </Step>
+  <Step title="Skip authentication">
+    No API key or authentication is required during the pilot. Leave any credential fields blank.
+  </Step>
+  <Step title="Save the connector">
+    Click **Save**. The Pokpok connector will appear as active in your connectors list.
+  </Step>
+  <Step title="Start querying">
+    Start a new conversation and ask a question about brand perception data. Try: *"What is the POKPOK AI Score?"*
+  </Step>
+</Steps>
+
+## Setup in Claude Desktop
+
+<Steps>
+  <Step title="Open Claude Desktop settings">
+    Launch Claude Desktop on your computer. Open **Settings** from the application menu.
+  </Step>
+  <Step title="Navigate to Connectors">
+    In Settings, select the **Connectors** section.
+  </Step>
+  <Step title="Add a custom connector">
+    Click **Add custom connector**.
+  </Step>
+  <Step title="Enter the Pokpok MCP URL">
+    In the URL field, enter:
+    ```
+    https://mcp.pokpok.ai
+    ```
+  </Step>
+  <Step title="Skip authentication">
+    No authentication is required. Leave any credential fields blank.
+  </Step>
+  <Step title="Save and activate">
+    Save the connector. Restart the connector if prompted to activate it.
+  </Step>
+</Steps>
+
+## Verifying the Connection
+
+Once connected, verify the integration is working by asking Claude: **"What is the POKPOK AI Score?"**
+
+Claude will call the `pokpok_about` tool and return an explanation of the POKPOK AI Score and the data model. If you see a structured response explaining brand perception markers or scoring methodology, the connection is working correctly.
+
+<Tip>
+  After connecting, ask Claude to describe what Pokpok data is available before diving into questions. This gives you a clear picture of every data table and its columns, so you know exactly what you can explore.
+</Tip>
+
+<Note>
+  Always use `https://mcp.pokpok.ai` as the connector URL. This is the stable, supported endpoint — using any other URL is not recommended and may break with future updates.
+</Note>
