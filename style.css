@@ -49,3 +49,106 @@ html:not(.dark) #content {
   --tw-prose-bullets: var(--pok-teal);
   --tw-prose-counters: var(--pok-teal);
 }
+
+/* Colour meanings from pokpok.ai (design-system/foundations/color/color-rhythm.md):
+   yellow = "stop and act" · pink = "this is about you" · solid blocks, no gradients */
+
+/* Tip boxes = yellow */
+.callout[data-callout-type="tip"] {
+  background-color: var(--pok-yellow) !important;
+  border-color: var(--pok-yellow) !important;
+}
+/* Note boxes = pink */
+.callout[data-callout-type="note"] {
+  background-color: var(--pok-pink) !important;
+  border-color: var(--pok-pink) !important;
+}
+.callout[data-callout-type="tip"], .callout[data-callout-type="tip"] *,
+.callout[data-callout-type="note"], .callout[data-callout-type="note"] * {
+  color: var(--pok-teal) !important;
+  --tw-prose-body: var(--pok-teal);
+  --tw-prose-bold: var(--pok-teal);
+  --tw-prose-links: var(--pok-teal);
+}
+
+/* step numbers = yellow squares with teal numbers */
+[data-component-part="step-indicator"] {
+  background-color: var(--pok-yellow) !important;
+  color: var(--pok-teal) !important;
+}
+
+/* cards: off-white, pink on hover */
+html:not(.dark) .card { background-color: var(--pok-card) !important; }
+html .card:hover { background-color: var(--pok-pink) !important; border-color: var(--pok-pink) !important; }
+html .card:hover, html .card:hover * { color: var(--pok-teal) !important; }
+
+/* card titles in JetBrains Mono, as card titles on pokpok.ai */
+[data-component-part="card-title"] {
+  font-family: 'JetBrains Mono', ui-monospace, monospace !important;
+  font-weight: 600 !important;
+  letter-spacing: normal !important;
+}
+
+/* ===== Page sections, as on pokpok.ai: label "01 // …", serif heading, solid colour block ===== */
+.pok-lead { font-size: 1.15rem; line-height: 1.7; margin: 0 0 8px; }
+.pok-band { padding: 36px 32px; margin: 28px 0; background-color: transparent; }
+.pok-band--pink { background: var(--pok-pink) !important; }
+.pok-band--yellow { background: var(--pok-yellow) !important; }
+.pok-band--teal { background: var(--pok-teal) !important; }
+html.dark .pok-band--teal { outline: 1px solid rgba(253, 253, 252, 0.2); }
+.pok-band--pink, .pok-band--pink *, .pok-band--yellow, .pok-band--yellow * { color: var(--pok-teal) !important; }
+.pok-band--teal, .pok-band--teal * { color: var(--pok-card) !important; }
+.pok-band h2:not([data-component-part]) { margin-top: 0 !important; margin-bottom: 20px !important; font-size: 2rem !important; line-height: 1.15 !important; }
+.pok-label {
+  font-family: 'JetBrains Mono', ui-monospace, monospace; font-weight: 600; font-size: 12px; line-height: 16px;
+  letter-spacing: 0.8px; text-transform: uppercase; opacity: 0.75; margin-bottom: 8px;
+}
+.pok-grid { display: grid; gap: 16px; }
+.pok-grid--2 { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+@media (max-width: 640px) { .pok-grid--2 { grid-template-columns: 1fr; } .pok-band { padding: 28px 20px; } }
+.pok-tile { background: var(--pok-card); padding: 20px 22px; }
+.pok-tile, .pok-tile * { color: var(--pok-teal) !important; }
+.pok-tile h3 {
+  font-family: 'JetBrains Mono', ui-monospace, monospace !important; font-weight: 600 !important;
+  font-size: 1rem !important; letter-spacing: normal !important; margin: 0 0 8px !important;
+}
+.pok-tile p { margin: 0 0 8px !important; font-size: 0.9rem; line-height: 1.6; }
+.pok-tile__kicker {
+  display: inline-block; font-family: 'JetBrains Mono', monospace; font-weight: 800; font-size: 12px;
+  letter-spacing: 0.8px; background: var(--pok-teal); color: var(--pok-yellow) !important; padding: 2px 8px; margin-bottom: 10px;
+}
+.pok-tile__note { opacity: 0.8; font-size: 0.85rem !important; }
+.pok-gap { margin-top: 16px; padding: 14px 18px; background: var(--pok-teal); font-family: 'JetBrains Mono', monospace; font-size: 0.9rem; }
+.pok-gap, .pok-gap * { color: var(--pok-card) !important; }
+.pok-gap strong { color: var(--pok-yellow) !important; }
+.pok-button {
+  display: inline-block; margin-top: 8px; padding: 10px 18px; background: var(--pok-pink); text-decoration: none !important;
+  font-family: 'JetBrains Mono', monospace; font-weight: 600; font-size: 13px; letter-spacing: 0.8px; text-transform: uppercase;
+  border: none !important;
+}
+.pok-band--teal .pok-button, .pok-band--teal .pok-button * { color: var(--pok-teal) !important; }
+.pok-band .card { background: var(--pok-card) !important; }
+
+/* ===== Corner notch (design-system token --pok-notch: 4px): four real 4×4 squares, one per corner,
+   painted in the colour of the ground the block sits on (--nc). Not border-radius, not a chamfer. ===== */
+:root { --pok-notch: 4px; --nc: var(--pok-beige); }
+html.dark { --nc: var(--pok-teal); }
+#navbar { --nc: var(--pok-teal); }
+.pok-band--pink > * { --nc: var(--pok-pink) !important; }
+.pok-band--yellow > * { --nc: var(--pok-yellow) !important; }
+.pok-band--teal > * { --nc: var(--pok-teal) !important; }
+
+.pok-band, .pok-tile, .pok-gap, .pok-button, .pok-tile__kicker,
+.card, .callout, [data-component-part="step-indicator"],
+#topbar-cta-button span.absolute, #search-bar-entry {
+  background-image:
+    linear-gradient(var(--nc), var(--nc)), linear-gradient(var(--nc), var(--nc)),
+    linear-gradient(var(--nc), var(--nc)), linear-gradient(var(--nc), var(--nc)) !important;
+  background-size: var(--pok-notch) var(--pok-notch) !important;
+  background-position: top left, top right, bottom left, bottom right !important;
+  background-repeat: no-repeat !important;
+  background-origin: border-box !important;
+}
+/* borders would draw over the notch squares: blocks on pokpok.ai have none */
+.card, .callout, #search-bar-entry { border-color: transparent !important; }
+html .card:hover { border-color: transparent !important; outline: none !important; }
