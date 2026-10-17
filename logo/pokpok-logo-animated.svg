@@ -1,0 +1,114 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 524 148" width="524" height="148" role="img" aria-label="POKPOK"><title>POKPOK</title><g transform="scale(4)"><defs>
+    <clipPath id="ppScreen" clipPathUnits="userSpaceOnUse">
+      <path d="M7.6,27.3 L8.8,7.5 41.7,9.6 40.5,29.4 Z"/>
+    </clipPath>
+  </defs>
+
+  
+  <path fill="#0a3b44" d="M7.6,27.3 L8.8,7.5 41.7,9.6 40.5,29.4 Z"/>
+
+  
+  <g clip-path="url(#ppScreen)">
+
+    
+    <rect y="11.9" width="6.6" height="2.2" fill="#f5f900" opacity="0">
+      <animate attributeName="opacity" dur="24s" repeatCount="indefinite"
+        keyTimes="0;0.0625;0.070;0.135;0.1417;1" values="0;0;1;1;0;0"/>
+      <animate attributeName="x" dur="24s" repeatCount="indefinite" calcMode="spline"
+        keyTimes="0;0.0708;0.0833;0.1042;0.1208;0.135;1"
+        keySplines="0 0 1 1;0 0 1 1;0.4 0 0.6 1;0 0 1 1;0.4 0 0.6 1;0 0 1 1"
+        values="11.5;11.5;11.5;21.5;21.5;11.5;11.5"/>
+    </rect>
+    <rect y="11.9" width="6.6" height="2.2" fill="#f5f900" opacity="0">
+      <animate attributeName="opacity" dur="24s" repeatCount="indefinite"
+        keyTimes="0;0.0625;0.070;0.135;0.1417;1" values="0;0;1;1;0;0"/>
+      <animate attributeName="x" dur="24s" repeatCount="indefinite" calcMode="spline"
+        keyTimes="0;0.0708;0.0833;0.1042;0.1208;0.135;1"
+        keySplines="0 0 1 1;0 0 1 1;0.4 0 0.6 1;0 0 1 1;0.4 0 0.6 1;0 0 1 1"
+        values="22.0;22.0;22.0;32.0;32.0;22.0;22.0"/>
+    </rect>
+
+    
+    <rect x="7.2" y="22.1" width="34.8" height="2.2" fill="#f5f900" opacity="0">
+      <animate attributeName="opacity" dur="24s" repeatCount="indefinite"
+        keyTimes="0;0.1458;0.1521;0.2146;0.2208;1" values="0;0;1;1;0;0"/>
+    </rect>
+    <polygon points="15.3,20.8 11.5,14.2 19.1,14.2" fill="#f5f900" opacity="0">
+      <animate attributeName="opacity" dur="24s" repeatCount="indefinite"
+        keyTimes="0;0.1458;0.1521;0.2146;0.2208;1" values="0;0;1;1;0;0"/>
+      <animateTransform attributeName="transform" attributeType="XML" type="translate"
+        additive="sum" dur="24s" repeatCount="indefinite" calcMode="spline"
+        keyTimes="0;0.1521;0.1604;0.1875;0.2083;0.2146;1"
+        keySplines="0 0 1 1;0 0 1 1;0.4 0 0.6 1;0 0 1 1;0.4 0 0.6 1;0 0 1 1"
+        values="0 0;0 0;0 0;19.2 0;19.2 0;0 0;0 0"/>
+    </polygon>
+
+    
+    <rect x="7.2" y="11.9" width="34.8" height="2.2" fill="#f5f900" opacity="0">
+      <animate attributeName="y" dur="24s" repeatCount="indefinite" calcMode="spline"
+        keyTimes="0;0.2292;0.2833;1" keySplines="0 0 1 1;0.42 0 0.58 1;0 0 1 1"
+        values="11.9;11.9;22.9;22.9"/>
+      <animate attributeName="opacity" dur="24s" repeatCount="indefinite"
+        keyTimes="0;0.2292;0.235;0.278;0.2833;1" values="0;0;0.95;0.95;0;0"/>
+    </rect>
+
+    
+    <rect x="7.3" y="11.9" width="34.8" height="2.2" fill="#f5f900" opacity="0">
+      <animate attributeName="opacity" dur="24s" repeatCount="indefinite"
+        keyTimes="0;0.2917;0.298;0.365;0.375;1" values="0;0;1;1;0;0"/>
+    </rect>
+    <rect x="7.3" y="17.4" width="34.8" height="2.2" fill="#f5f900" opacity="0">
+      <animate attributeName="opacity" dur="24s" repeatCount="indefinite"
+        keyTimes="0;0.298;0.304;0.365;0.375;1" values="0;0;1;1;0;0"/>
+    </rect>
+    <rect x="7.3" y="22.9" width="34.8" height="2.2" fill="#f5f900" opacity="0">
+      <animate attributeName="opacity" dur="24s" repeatCount="indefinite"
+        keyTimes="0;0.304;0.310;0.365;0.375;1" values="0;0;1;1;0;0"/>
+    </rect>
+
+    
+    <g opacity="0">
+      <animate attributeName="opacity" dur="24s" repeatCount="indefinite"
+        keyTimes="0;0.310;0.316;0.365;0.375;1" values="0;0;1;1;0;0"/>
+      <g>
+        <rect x="12.0" y="10.3" width="5.5" height="5.5" fill="#f5f900" transform="rotate(-45 14.75 13.05)"/>
+        <animateTransform attributeName="transform" attributeType="XML" type="translate"
+          dur="24s" repeatCount="indefinite" calcMode="spline"
+          keyTimes="0;0.3125;0.333;0.358;1" keySplines="0 0 1 1;0.4 0 0.6 1;0.4 0 0.6 1;0 0 1 1"
+          values="0 0;0 0;13 0;0 0;0 0"/>
+      </g>
+      <g>
+        <rect x="21.9" y="15.7" width="5.5" height="5.5" fill="#f5f900" transform="rotate(-45 24.65 18.45)"/>
+        <animateTransform attributeName="transform" attributeType="XML" type="translate"
+          dur="24s" repeatCount="indefinite" calcMode="spline"
+          keyTimes="0;0.316;0.337;0.358;1" keySplines="0 0 1 1;0.4 0 0.6 1;0.4 0 0.6 1;0 0 1 1"
+          values="0 0;0 0;-11 0;0 0;0 0"/>
+      </g>
+      <g>
+        <rect x="31.2" y="21.2" width="5.5" height="5.5" fill="#f5f900" transform="rotate(-45 33.95 23.95)"/>
+        <animateTransform attributeName="transform" attributeType="XML" type="translate"
+          dur="24s" repeatCount="indefinite" calcMode="spline"
+          keyTimes="0;0.320;0.341;0.354;1" keySplines="0 0 1 1;0.4 0 0.6 1;0.4 0 0.6 1;0 0 1 1"
+          values="0 0;0 0;-16 0;0 0;0 0"/>
+      </g>
+    </g>
+  </g>
+
+  
+  <g>
+    <animate attributeName="opacity" dur="24s" repeatCount="indefinite"
+      keyTimes="0;0.0583;0.062;0.2292;0.2333;0.2833;0.287;0.375;0.379;1"
+      values="1;1;0;0;1;1;0;0;1;1"/>
+    <rect x="11.5" y="11.9" width="6.6" height="6.6" fill="#f5f900">
+      
+      <animate attributeName="opacity" dur="24s" repeatCount="indefinite" calcMode="discrete"
+        keyTimes="0;0.0115;0.0208;0.0323;0.0417;0.0531;0.0583;1"
+        values="1;0;1;0;1;0;1;1"/>
+      
+      <animate attributeName="fill" dur="24s" repeatCount="indefinite"
+        keyTimes="0;0.246;0.25;0.263;1" values="#f5f900;#f5f900;#fdfdfc;#f5f900;#f5f900"/>
+    </rect>
+  </g>
+
+  
+  <path fill="#ffc4d6" d="M48.3,26.9l-1.2-19.8-6.6.4-.4-6.6L7.2,3.1l.4,6.6-6.6.4,1.2,19.8,6.6-.4.4,6.6,32.9-2.1-.4-6.6,6.6-.4ZM7.6,27.3l1.2-19.8,32.9,2.1-1.2,19.8-32.9-2.1Z"/></g><path fill="#fdfdfc" d="M330.5,113.3v-2.5c-.1,0,4.4-1.5,4.4-1.5l.7-3.3v-62.8l-5-6.6,11.3-4.4,1.2,1.8v45.9l2.7.7,14.7-18-5.1-2.6v-2.5h19l-.9,2.6-5,1.9-15.2,15.8,17.2,31.5,5.2,1.5-.2,2.5h-19.1v-2.5c-.1,0,1.8-.2,1.8-.2l1.8-5.4-10.4-20.3-1.6-1.2-4.8,4.7v17.6l.7,3.3,6,1.5v2.5h-19.3Z"/><path fill="#fdfdfc" d="M323.6,70.9c-1.8-4.3-4.1-7.7-7.1-10.3-3-2.6-6.3-3.8-10-3.8s-7,1.3-10,3.8c-3,2.6-5.4,6-7.1,10.3-1.8,4.3-2.6,9.2-2.6,14.6s.9,10.3,2.6,14.7c1.8,4.4,4.1,7.8,7.1,10.4,3,2.5,6.3,3.8,10,3.8s7.1-1.3,10.1-3.8c3-2.5,5.4-6,7.1-10.4,1.7-4.4,2.6-9.3,2.6-14.7s-.9-10.3-2.6-14.6ZM313.9,106.3l-4.9,4.7h-5.2l-4.9-4.7c-5.1-13.6-5.1-27.6,0-41.4l4.9-4.9h5.2l4.9,4.9c5.1,13.8,5.1,27.8,0,41.4Z"/><path fill="#fdfdfc" d="M238,113.3l-.2-2.5,5.5-1.6.7-3.1V41.6l-.7-3.1-5.5-1.6.2-2.5h22.9c7.9,2,16.3,5.6,19.4,13.7,4.7,11.4,2.6,26.6-7,34.5-6,5.4-13.2,8.7-21.4,9.3l-.2,13.9.9,3.1,8,2-.4,2.5h-22.2ZM251.8,84.3l8.4,1.2c13.2-6.5,16.8-22.9,12.5-35.9-1.9-6.5-6.7-9.5-13.6-11.2l-7.3.8v45.1Z"/><path fill="#fdfdfc" d="M472.4,113.3v-2.5c-.1,0,4.4-1.5,4.4-1.5l.7-3.3v-62.8l-5-6.6,11.3-4.4,1.2,1.8v45.9l2.7.7,14.7-18-5.1-2.6v-2.5h19l-.9,2.6-5,1.9-15.2,15.8,17.2,31.5,5.2,1.5-.2,2.5h-19.1v-2.5c-.1,0,1.8-.2,1.8-.2l1.8-5.4-10.4-20.3-1.6-1.2-4.8,4.7v17.6l.7,3.3,6,1.5v2.5h-19.3Z"/><path fill="#fdfdfc" d="M465.5,70.9c-1.8-4.3-4.1-7.7-7.1-10.3-3-2.6-6.3-3.8-10-3.8s-7,1.3-10,3.8c-3,2.6-5.4,6-7.1,10.3-1.8,4.3-2.6,9.2-2.6,14.6s.9,10.3,2.6,14.7c1.8,4.4,4.1,7.8,7.1,10.4,3,2.5,6.3,3.8,10,3.8s7.1-1.3,10.1-3.8c3-2.5,5.4-6,7.1-10.4,1.7-4.4,2.6-9.3,2.6-14.7s-.9-10.3-2.6-14.6ZM455.9,106.3l-4.9,4.7h-5.2l-4.9-4.7c-5.1-13.6-5.1-27.6,0-41.4l4.9-4.9h5.2l4.9,4.9c5.1,13.8,5.1,27.8,0,41.4Z"/><path fill="#fdfdfc" d="M380,113.3l-.2-2.5,5.5-1.6.7-3.1V41.6l-.7-3.1-5.5-1.6.2-2.5h22.9c7.9,2,16.3,5.6,19.4,13.7,4.7,11.4,2.6,26.6-7,34.5-6,5.4-13.2,8.7-21.4,9.3l-.2,13.9.9,3.1,8,2-.4,2.5h-22.2ZM393.8,84.3l8.4,1.2c13.2-6.5,16.8-22.9,12.5-35.9-1.9-6.5-6.7-9.5-13.6-11.2l-7.3.8v45.1Z"/></svg>

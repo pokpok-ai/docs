@@ -1,0 +1,51 @@
+/* POKPOK brand layer for docs.pokpok.ai — matches pokpok.ai (Framer project 1ieQdH4xsbbeEc4Et9AO).
+   Tokens: design-system/foundations/color/tokens.json in pokpok-ai/pokpok-ai.
+   teal #0A3B44 · yellow #F5F900 · pink #FFC4D6 · beige #E8E0D1 · card #FDFDFC · radius 0 */
+
+:root {
+  --pok-teal: #0A3B44;
+  --pok-yellow: #F5F900;
+  --pok-pink: #FFC4D6;
+  --pok-beige: #E8E0D1;
+  --pok-card: #FDFDFC;
+}
+
+/* square corners everywhere, as on pokpok.ai */
+*, *::before, *::after { border-radius: 0 !important; }
+
+/* top bar: teal, as on pokpok.ai */
+#navbar-transition { background-color: var(--pok-teal) !important; }
+#navbar a, #navbar button, #navbar svg { color: var(--pok-card); }
+#navbar .bg-primary, #navbar .dark\:bg-primary-light { background-color: var(--pok-yellow) !important; }
+
+/* search field on the teal bar */
+#search-bar-entry {
+  background-color: rgba(253, 253, 252, 0.08) !important;
+  color: var(--pok-card) !important;
+  border-color: rgba(253, 253, 252, 0.25) !important;
+}
+#search-bar-entry svg { color: var(--pok-card) !important; }
+
+/* the top-bar button: pink with teal text, like LOG IN on pokpok.ai */
+#topbar-cta-button span.absolute { background-color: var(--pok-pink) !important; }
+#topbar-cta-button a, #topbar-cta-button a * { color: var(--pok-teal) !important; text-transform: uppercase; letter-spacing: 0.8px; }
+
+/* logo: 50px in a 70px bar on pokpok.ai, same share of the docs top row */
+#navbar .nav-logo { height: 44px !important; }
+
+/* headings: Instrument Serif at its own weight and spacing, as on pokpok.ai */
+#page-title, #content h1, #content h2, #content h3, #content h4 {
+  font-weight: 400 !important;
+  letter-spacing: normal !important;
+}
+
+/* text in teal on the light page */
+html:not(.dark) #page-title,
+html:not(.dark) #content {
+  color: var(--pok-teal);
+  --tw-prose-body: var(--pok-teal);
+  --tw-prose-headings: var(--pok-teal);
+  --tw-prose-bold: var(--pok-teal);
+  --tw-prose-bullets: var(--pok-teal);
+  --tw-prose-counters: var(--pok-teal);
+}

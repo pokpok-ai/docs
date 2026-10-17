@@ -1,20 +1,31 @@
 {
   "$schema": "https://mintlify.com/docs.json",
   "name": "PokPok",
-  "theme": "maple",
+  "theme": "mint",
   "logo": {
-    "light": "https://media.brand.dev/0e68d447-508b-4314-afde-c43351ed580a.svg",
-    "dark": "https://media.brand.dev/0e68d447-508b-4314-afde-c43351ed580a.svg"
+    "light": "/logo/pokpok-logo-animated.svg",
+    "dark": "/logo/pokpok-logo-animated.svg",
+    "href": "https://pokpok.ai"
   },
-  "favicon": "https://media.brand.dev/9fb43ae7-680e-4b4f-bd14-ba14c3a878f8.jpg",
+  "favicon": "/logo/pokpok-icon.svg",
   "colors": {
-    "primary": "#eae14c",
-    "light": "#0d3d42",
-    "dark": "#848c9c"
+    "primary": "#0A3B44",
+    "light": "#F5F900",
+    "dark": "#0A3B44"
   },
-  "font": {
-    "headings": {
-      "family": "JetBrains Mono"
+  "background": {
+    "color": {
+      "light": "#E8E0D1",
+      "dark": "#0A3B44"
+    }
+  },
+  "appearance": {
+    "default": "light"
+  },
+  "fonts": {
+    "heading": {
+      "family": "Instrument Serif",
+      "weight": 400
     },
     "body": {
       "family": "JetBrains Mono"
@@ -104,10 +115,5 @@
         ]
       }
     ]
-  },
-  "fonts": {
-    "heading": {
-      "family": "Instrument Serif"
-    }
   }
 }

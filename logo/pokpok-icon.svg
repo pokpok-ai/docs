@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 49.3 37" width="197" height="148" role="img" aria-label="POKPOK">
+  <title>POKPOK</title>
+  <!-- Static, motion-free fallback for prefers-reduced-motion. Same viewBox as pokpok_icon_animated.svg
+       (drop-in swap). Equals the animated icon's resting frame: teal screen + pink frame + yellow eye. -->
+  <path fill="#0a3b44" d="M7.6,27.3 L8.8,7.5 41.7,9.6 40.5,29.4 Z"/>
+  <rect fill="#f5f900" x="11.5" y="11.9" width="6.6" height="6.6"/>
+  <path fill="#ffc4d6" d="M48.3,26.9l-1.2-19.8-6.6.4-.4-6.6L7.2,3.1l.4,6.6-6.6.4,1.2,19.8,6.6-.4.4,6.6,32.9-2.1-.4-6.6,6.6-.4ZM7.6,27.3l1.2-19.8,32.9,2.1-1.2,19.8-32.9-2.1Z"/>
+</svg>
