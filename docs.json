@@ -3,7 +3,7 @@
   "name": "PokPok",
   "theme": "mint",
   "logo": {
-    "light": "/logo/pokpok-logo-animated.svg",
+    "light": "/logo/pokpok-logo-light.svg",
     "dark": "/logo/pokpok-logo-animated.svg",
     "href": "https://pokpok.ai"
   },

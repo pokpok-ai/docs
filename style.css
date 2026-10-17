@@ -152,3 +152,12 @@ html.dark { --nc: var(--pok-teal); }
 /* borders would draw over the notch squares: blocks on pokpok.ai have none */
 .card, .callout, #search-bar-entry { border-color: transparent !important; }
 html .card:hover { border-color: transparent !important; outline: none !important; }
+
+/* logo: the top bar is teal in both modes, so it always shows the flat animated lockup (designed on teal);
+   the light phone menu keeps the light-mode file, the outlined mark with teal letters (design-system logo rule) */
+#navbar img.nav-logo.dark\:hidden { display: none !important; }
+#navbar img.nav-logo.dark\:block { display: block !important; }
+
+/* every text on the teal top bar is light (the phone breadcrumb was teal on teal); the pink button keeps its teal text */
+#navbar, #navbar * { color: var(--pok-card) !important; }
+#navbar #topbar-cta-button a, #navbar #topbar-cta-button a * { color: var(--pok-teal) !important; }
