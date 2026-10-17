@@ -1,112 +1,133 @@
 ---
-title: "How Your Pokpok Brand Perception Score Is Calculated"
+title: "How PokPok Scores Are Calculated"
 sidebarTitle: "Scoring"
-description: "Your Pokpok Brand Perception Score summarises 17-marker alignment into a single number — here's exactly how it's calculated and what it means."
+description: "Every PokPok score with its formula, range and bands: the POKPOK Brand Perception Score (0.6 × HI + 0.4 × AI), the HI and AI perception scores, the 60/40 marker alignment, category saturation and the X-RAY lights."
 ---
 
-Pokpok reports include a Brand Perception Score — a single number from 0 to 100 summarising how consistently your brand communicates across 17 markers on your website and product page. The score is a diagnostic tool, not a report card. Its purpose isn't to grade your brand — it's to show you exactly where your two most important brand surfaces are pulling in different directions, and by how much.
+<div className="pok-lead">
+  A PokPok report carries several scores. Each one answers its own question on its own scale. **Read each with its explanation.**
+</div>
 
-## How the Score Is Calculated
+<div className="pok-band pok-band--pink">
+  <div className="pok-label">01 // The scores you will see</div>
 
-Every marker is scored using the same **60/40 formula**, combining two independent assessments:
+  <h2>Which number answers which question</h2>
 
-<Steps>
-  <Step title="Territory Match — 60 points">
-    This is a binary check. Does your product page (PDP) occupy the same brand territory as your website (WWW) for this marker?
+  | Score | The question | Range | Where you see it |
+  |---|---|---|---|
+  | **POKPOK Brand Perception Score** | How is the brand read, human and AI combined? (0.6 × HI + 0.4 × AI) | 0–100 | Brand Perception Truth |
+  | **HI score** | How does the page land on people? | 0–100 | Brand Perception Truth, Category Perception Truth (PDP) |
+  | **AI score** | Can AI find, read, know, trust and act on the page? | 0–100 | Brand Perception Truth |
+  | **Marker alignment %** | Does one read of a marker match the other? | 0–100% | Brand Perception Truth (Single URL) -geo, Brand Alignment Truth |
+  | **Saturation %** | How crowded is a territory in your category? | 0–100% | Category Perception Truth (PDP) |
+  | **POKPOK Index score** | How real is a product's climb on Amazon? | 0–100 | [POKPOK Index](/analyse/pokpok-index) |
+  | **X-RAY lights** | Quick health check of 6 metrics | 0–100 | Free X-RAY |
+</div>
 
-    - **Exact match → 60 points**
-    - **Mismatch → 0 points**
+<div className="pok-band">
+  <div className="pok-label">02 // The two lenses</div>
 
-    Territory is the "what" — the category, claim, or positioning each page is operating in. For example: does your website lead with emotional transformation while your PDP leads with functional ingredients? That's a territory mismatch.
-  </Step>
-  <Step title="Slider Execution — 40 points">
-    For markers that sit on a spectrum (e.g. formal ↔ casual tone, safe ↔ bold personality), Pokpok places both your WWW and PDP on the same slider and measures the gap between them.
+  <h2>HI score and AI score: two scales</h2>
 
-    - **Gap of 0 → 40 points** (both pages in identical position)
-    - **Gap of 1 → 20 points** (adjacent positions — close but not identical)
-    - **Gap of 2 or more → 0 points** (meaningfully different executions)
+  <div className="pok-grid pok-grid--2">
+    <div className="pok-tile">
+      <div className="pok-tile__kicker">HI</div>
+      <h3>Weighted: clarity and trust first</h3>
+      <p>HI = 0.30 × Message Clarity + 0.25 × Trust Score + 0.15 × Voice Consistency + 0.15 × Audience Resonance + 0.15 × Decision Confidence.</p>
+      <p className="pok-tile__note">A model reads the page as an impatient shopper in the first 10 seconds. If they cannot understand it, nothing else matters.</p>
+    </div>
+    <div className="pok-tile">
+      <div className="pok-tile__kicker">AI</div>
+      <h3>Equal weights: five metrics</h3>
+      <p>AI = average of AI FIND, AI READ, AI KNOW, AI TRUST and AI DO, 20% each. Each metric is the average of its five sub-measures.</p>
+      <p className="pok-tile__note">AI Standing (is the brand known elsewhere?) is shown beside it as a band and is not part of the AI score.</p>
+    </div>
+  </div>
 
-    Execution is the "how" — the degree and consistency with which each page delivers within a territory.
-  </Step>
-  <Step title="Marker Score">
-    Each marker's final score is the sum of the two components:
+  <p>Each HI metric gets a band label. Two of them as examples:</p>
 
-    ```
-    marker_score = territory_match + slider_execution
-    ```
+  | Metric score | Message Clarity | Trust Score |
+  |---|---|---|
+  | 80–100 | INSTANT-READ | RECEIPTS LOUD |
+  | 65–79 | UNDERSTANDABLE | CREDIBLE |
+  | 50–64 | TAKES EFFORT | MIXED EVIDENCE |
+  | 35–49 | OPAQUE | HYPE-HEAVY |
+  | 20–34 | UNREADABLE | TRUST GAP |
+  | 0–19 | WORD SOUP | NO RECEIPTS |
 
-    The only possible values per marker are: **0, 20, 40, 60, 80, 100**
-  </Step>
-  <Step title="Overall Brand Perception Score">
-    The final score is the average across all 17 marker scores:
+  <Note>
+    The HI and AI scores measure different things, so the report shows each one on its own, side by side. The headline POKPOK Brand Perception Score weighs them 60/40 (0.6 × HI + 0.4 × AI). The five AI metrics are separate from the 17 brand perception markers.
+  </Note>
+</div>
 
-    ```
-    brand_perception_score = sum(all 17 marker scores) ÷ 17
-    ```
+<div className="pok-band pok-band--pink">
+  <div className="pok-label">03 // The 60/40 marker alignment</div>
 
-    This gives you a single 0–100 number representing your brand's overall consistency across website and product page.
-  </Step>
-</Steps>
+  <h2>Do two reads of a marker tell the same story?</h2>
 
-## What Your Score Means
+  <p>The same formula compares two reads of each of the [17 markers](/concepts/brand-markers). In **Brand Perception Truth (Single URL) -geo** the two reads are people's and ChatGPT's. In **Brand Alignment Truth** they are your website and your Amazon product page.</p>
 
-<Tabs>
-  <Tab title="80–100: Strong Alignment">
-    Your brand speaks with one voice across channels. Your website and product page are reinforcing the same territories and executing them at the same level. Customers experience a coherent brand wherever they encounter you.
+  <Steps>
+    <Step title="Territory match: 60 points">
+      Same territory in both reads → 60 points. Different territory → 0. A territory mismatch costs 60 of the marker's 100 points.
+    </Step>
+    <Step title="Slider proximity: 40 points">
+      Two sliders worth 20 points each. Same position → 20, one step apart → 10, further apart → 0.
+      Tone of Voice: four sliders worth 10 each, same rule. Archetypes Mix: primary, secondary and tertiary archetype worth 20, 10 and 10; an archetype present at a different rank gets half.
+    </Step>
+    <Step title="Marker score">
+      Territory points + slider points, 0–100%. The arithmetic: same territory, one slider identical, one slider two steps apart = 60 + 20 + 0 = **80%**.
+    </Step>
+    <Step title="Overall">
+      Brand Alignment Truth: the sum of the 17 marker scores ÷ 17. The -geo report: the average over the markers both reads cover; markers one read did not cover are counted and shown, not averaged in.
+    </Step>
+  </Steps>
 
-    **Your focus:** Maintain consistency as you scale. Use the Category Saturation Score to identify whether any of your strongly-aligned territories are crowded — strong alignment in a saturated space still limits differentiation.
-  </Tab>
-  <Tab title="60–79: Moderate Alignment">
-    A few markers diverge between your website and product page. The overall brand holds together, but there are specific points where the two surfaces are telling slightly different stories. These gaps are targeted and fixable without a full brand overhaul.
+  | Alignment | Band |
+  |---|---|
+  | 90–100% | **Healthy** |
+  | 70–89% | **Stable** |
+  | 50–69% | **Guarded** |
+  | 0–49% | **Critical** |
+</div>
 
-    **Your focus:** Identify which markers are dragging the score — especially any territory mismatches, which cost 60 points each. Fixing one mismatch can move your score significantly.
-  </Tab>
-  <Tab title="40–59: Fragmented Signals">
-    Your PDP and website are telling noticeably different stories across multiple markers. Customers who discover you through your website and then land on your product page encounter a brand that feels inconsistent — less trustworthy, harder to remember, easier to ignore.
+<div className="pok-band">
+  <div className="pok-label">04 // Category and quick-check scores</div>
 
-    **Your focus:** Prioritise the markers with the largest gaps. Look for patterns — is the fragmentation concentrated in Foundation markers (a strategic problem) or Communication markers (a copywriting problem)? The root cause shapes the fix.
-  </Tab>
-  <Tab title="0–39: Multiple Personality Disorder">
-    Significant gaps exist across most markers. Your website and product page are effectively operating as two different brands. This is the finding Pokpok calls **Multiple Personality Disorder** — and it's more common than most brand teams expect, because website and PDP copy are often written by different people, at different times, for different audiences.
+  <h2>Saturation, the Index and the X-RAY lights</h2>
 
-    **Your focus:** Start with the 17-marker breakdown, not the headline score. Identify which markers have any alignment at all — those are the anchors to build from. The 5 Uncomfortable Truths in your report will name the strategic shifts required.
-  </Tab>
-</Tabs>
+  **Saturation %** is the share of category leaders standing in one territory of a marker. The **POKPOK Category Saturation Score** (0–100) averages, over the 17 markers, the saturation of each marker's most crowded territory.
 
-## Category Saturation Score
+  | Saturation | Band |
+  |---|---|
+  | 80–100% | **SATURATED CORE** |
+  | 55–79% | **MAINSTREAM PATH** |
+  | 25–54% | **EMERGING NICHE** |
+  | 0–24% | **STRATEGIC GAP** |
 
-Your Brand Perception Score measures internal consistency — how well your own two pages align. The **Category Saturation Score** is a separate 0–100 metric that measures something different: how crowded each territory is across the 15 leading brands in your category.
+  **X-RAY lights** cover 6 metrics (HI01–HI03, AI01–AI03): **Green** 70–100 · **Orange** 40–69 · **Red** 0–39.
 
-| Saturation | What It Signals |
-|------------|-----------------|
-| **70–100** | This territory is heavily occupied by competitors. High alignment here is table stakes, not an advantage. |
-| **40–69** | Moderate competition for this territory. Distinctive execution still creates separation. |
-| **0–39** | This territory is largely unclaimed. Owning it authentically is a strategic opportunity. |
+  The **POKPOK Index score** has nine bands, from UNSTOPPABLE FORCE (90–100) to FLATLINE (0–19): see [POKPOK Index](/analyse/pokpok-index).
+</div>
 
-**Example:** A Category Saturation Score of **65/100** for Brand Mission means that 65% of the 15 category leaders are claiming the same mission territory. If your brand is also in that territory — even with a perfect alignment score — you're one of many, not one of a kind.
+<div className="pok-band pok-band--yellow">
+  <div className="pok-label">05 // Read your scores</div>
 
-Use saturation scores alongside your Brand Perception Score to ask the right question: not just *are we consistent?* but *are we consistently occupying the right territory?*
+  <h2>A number means nothing without what pulls it down</h2>
 
-## X-RAY vs Full Report Scoring
+  <Tip>
+    Skip the headline number and open the markers. Sort them by alignment, start with the Critical ones, and read which territory each read chose: that is the story you need to fix.
+  </Tip>
 
-<Accordion title="What's the difference between X-RAY and a full paid report?">
-Pokpok offers two levels of analysis, and they use different scoring methods.
+  <p>Every score in a PokPok report comes with its evidence and the measures that lower it. Read the two lenses side by side, never as one blended number.</p>
+</div>
 
-| | X-RAY Scan | Full Paid Report |
-|--|-----------|-----------------|
-| **Metrics** | 6 simplified X-RAY metrics (HI01–03, AI01–03) | All 17 brand markers |
-| **Formula** | LED indicators (Green/Yellow/Red) | 60/40 Territory Match + Slider Execution |
-| **Turnaround** | Instant | ~72 hours |
-| **Output** | Perception gap overview | Full 17-marker scorecard + 5 Uncomfortable Truths + Category Saturation |
-| **Best for** | Quick brand health check; identifying whether a deeper analysis is needed | Strategic repositioning; competitive differentiation; brand alignment audits |
+<div className="pok-band pok-band--teal">
+  <div className="pok-label">06 // Start here</div>
 
-The X-RAY scan is the fastest way to see where your brand stands. If it surfaces a significant HI-AI gap or obvious red-LED metrics, the full report tells you exactly which of the 17 markers is driving the problem — and what to do about it.
-</Accordion>
+  <h2>See your first two scores for free</h2>
 
-<Note>
-The narrative insights — the **5 Uncomfortable Truths** — are often more valuable than the headline score. The score shows you *how much* is misaligned. The Uncomfortable Truths name *what* to fix, *why* it matters competitively, and *where* the untaken territory is. Read those first.
-</Note>
+  <p>The X-RAY gives your HI and AI lights for any URL. The paid Brand Perception Truth gives the full HI and AI scores and the 17 markers.</p>
 
-<Tip>
-Don't fixate on the number. A score of 58 and a score of 62 are strategically identical — what matters is which markers are misaligned and what territory each should be occupying. Sort your 17-marker breakdown by score ascending, and start with the bottom three.
-</Tip>
+  <a className="pok-button" href="/diagnose/xray">Run the free X-RAY →</a>
+</div>

@@ -1,63 +1,96 @@
 ---
-title: "Human vs AI Brand Perception: The Pokpok Dual Lens"
+title: "Human vs AI Brand Perception: Two Lenses"
 sidebarTitle: "HI vs AI"
-description: "Pokpok scores every brand through two lenses — Human Perception and AI Perception — revealing the gap where visibility and revenue are lost."
+description: "PokPok reads every brand through two lenses, how people read the page (HI) and how AI reads it (AI), scores each on its own 0–100 scale, and in the -geo report reads all 17 brand perception markers through both."
 ---
 
-Pokpok analyses every brand through two lenses — Human Perception (HI) and AI Perception — because the gap between how humans and AI see your brand is where revenue bleeds. A page that converts human visitors can still be invisible to the generative engines now answering your customers' questions. Understanding both scores, and the distance between them, is the starting point for any brand perception strategy.
+<div className="pok-lead">
+  Your URL is judged by two minds. **People judge what the brand means. AI judges whether the brand can be found, read, trusted and used.** Most brands test only the first.
+</div>
 
-## Human Perception (HI)
+<div className="pok-band pok-band--pink">
+  <div className="pok-label">01 // The two lenses</div>
 
-Human Perception measures how an impatient, sceptical human shopper experiences your brand page in the first few seconds. The evaluator isn't a patient reader — it's someone who's already seen dozens of competitors, is scanning rather than reading, and will leave the moment something feels vague, untrustworthy, or generic.
+  <h2>Who your brand is to people, and who it is to machines</h2>
 
-Pokpok's HI score is built from three X-RAY metrics:
+  <div className="pok-grid pok-grid--2">
+    <div className="pok-tile">
+      <div className="pok-tile__kicker">HI</div>
+      <h3>Human perception</h3>
+      <p>How the page lands on an impatient, sceptical shopper in the first 10 seconds. A model reads the page in that shopper's role: it is not a panel of real people.</p>
+      <p className="pok-tile__note">Low HI: the visitor leaves before understanding why the product is for them.</p>
+    </div>
+    <div className="pok-tile">
+      <div className="pok-tile__kicker">AI</div>
+      <h3>AI perception</h3>
+      <p>Whether AI can reach the page, read the words, know the brand, believe the claims and act on the offer.</p>
+      <p className="pok-tile__note">Low AI: humans see the product, the machine does not.</p>
+    </div>
+  </div>
 
-| Code | Metric | What It Measures |
-|------|--------|-----------------|
-| HI01 | **Message Clarity** | Does your headline land immediately? Is it free of jargon, buzzwords, and generic claims? |
-| HI02 | **Trust Score** | Does your copy sound confident and credible, or hedged and corporate? |
-| HI03 | **Voice Consistency** | Is your brand voice distinct and maintained throughout the page, or does it drift? |
+  <Note>
+    HI and AI are **two separate 0–100 scales**. Read each one with its own measures. The report's headline POKPOK Brand Perception Score combines them 60/40 (0.6 × HI + 0.4 × AI) and is shown beside both.
+  </Note>
+</div>
 
-## AI Perception
+<div className="pok-band">
+  <div className="pok-label">02 // What each product measures</div>
 
-AI Perception measures how generative search engines — ChatGPT, Perplexity, Gemini, and Google AI Overviews — find, interpret, and represent your brand when users ask category questions. The evaluator here isn't a person at all. It's a large language model deciding whether your brand deserves to appear in a generated answer.
+  <h2>Same two lenses, different depth</h2>
 
-Pokpok's AI score is built from three X-RAY metrics:
+  | | Free X-RAY | Brand Perception Truth (Single URL) | Brand Perception Truth (Single URL) -geo |
+  |---|---|---|---|
+  | **Price** | Free, about 90 seconds | **€150** one-off | **€150** one-off |
+  | **HI lens** | 3 metrics: //HI01 MESSAGE CLARITY, //HI02 THE B.S METER [TRUST], //HI03 VOICE CONSISTENCY | HI score from 5 metrics (HI01–HI05) | Same HI score |
+  | **AI lens** | 3 metrics: //AI01 AI FINDABILITY, //AI02 AI SIGNAL CLARITY, //AI03 AI SHELF | AI score from 5 metrics: AI FIND, AI READ, AI KNOW, AI TRUST, AI DO | Same AI score, plus buyer questions asked to ChatGPT and Gemini, every answer word for word |
+  | **17 brand perception markers** | — | People's read of each marker | People's read **and** ChatGPT's read of each marker, with an alignment % per marker |
 
-| Code | Metric | What It Measures |
-|------|--------|-----------------|
-| AI01 | **AI Findability** | Can an LLM retrieve your brand when asked about your category? Are you being surfaced or skipped? |
-| AI02 | **Content Focus** | What's the signal-to-noise ratio on your page? Factual, specific data vs marketing filler that AI engines discount. |
-| AI03 | **Category Match** | How close is your page's semantic fingerprint to the core category baseline? Are you recognisably in your category? |
+  <p>How each score is built, with its weights and bands: [Scoring](/concepts/scoring).</p>
+</div>
 
-## The Gap
+<div className="pok-band pok-band--yellow">
+  <div className="pok-label">03 // The core: 17 markers on both lenses</div>
 
-The ~30-point delta between your HI score and your AI score is the strategic insight Pokpok is built to surface. Human perception scores average around 70. AI perception scores average around 40. That gap isn't a coincidence — it reflects a structural shift in how discovery works.
+  <h2>Does AI describe you the way people read you?</h2>
 
-Customers are no longer only using search engines to find brands. They're asking ChatGPT what moisturiser to buy. They're asking Perplexity which project management tool is best for small teams. They're reading AI-generated summaries instead of clicking through to your website. In that world, a brand that was built for humans — clear, emotive, persuasion-led — is often structurally invisible to the models generating those answers.
+  <p>The five AI metrics test whether a machine can use your page. They are a separate instrument. The question that matters more is whether AI tells your brand's story the way people read it: the same purpose, the same personality, the same proof.</p>
 
-**What the gap means in practice:**
+  <p>In the -geo report, ChatGPT reads your brand on all [17 brand perception markers](/concepts/brand-markers), next to the people read. Each marker gets an alignment % from the 60/40 formula, with a band:</p>
 
-- A **large gap (HI high, AI low)** means your page works on people but fails to get picked up by AI engines. You're winning the conversion battle while losing the discovery war.
-- A **small gap** means your page has the structured, factual signals AI needs — but check that you haven't stripped out the human persuasion that drives conversion.
-- An **AI score higher than HI** is rare and usually signals your page is dense with facts but lacks the clarity and warmth that converts human visitors.
+  | Alignment | Band |
+  |---|---|
+  | 90–100% | **Healthy** |
+  | 70–89% | **Stable** |
+  | 50–69% | **Guarded** |
+  | 0–49% | **Critical** |
 
-Brands that were not built for the AI era get omitted from generated answers, or worse — misrepresented. Pokpok shows you exactly where that's happening before it costs you customers.
+  <Tip>
+    Start with the Critical markers: that is where AI tells a different story about you than your page tells people.
+  </Tip>
+</div>
 
-## LED Score Thresholds
+<div className="pok-band">
+  <div className="pok-label">04 // The free X-RAY gap</div>
 
-Every X-RAY metric is displayed as an LED indicator. The colour tells you at a glance how that dimension is performing.
+  <h2>About 70 for people, about 40 for AI</h2>
 
-| Colour | Score Range | What It Means |
-|--------|-------------|---------------|
-| 🟢 **Green** | 70 – 100 | Strong performance. This dimension is working. |
-| 🟡 **Yellow** | 40 – 69 | Moderate performance. Improvement here will move the needle. |
-| 🔴 **Red** | 0 – 39 | Critical gap. This dimension is actively hurting your brand perception. |
+  <p>On the free X-RAY, most brands land around **70 on the human side and around 40 on the AI side**. That gap of about 30 points is the blind spot: a page built for human eyes that machines struggle to find and read.</p>
 
-<Note>
-X-RAY scores are calibrated against real-world benchmarks. HI averages around **70** and AI averages around **40** across the brands Pokpok has analysed. The 30-point gap you see in your own report is not a flaw in the scoring — it reflects the genuine structural difference between what human-optimised copy achieves versus what AI engines reward.
-</Note>
+  <p>Each X-RAY metric shows as a light:</p>
 
-<Tip>
-A low AI score almost never means your copy is bad. It usually means your page lacks the structured, factual signals — clear category statements, specific claims, named use cases — that AI engines need to confidently categorise and recommend you. The fix is additive, not a rewrite.
-</Tip>
+  | Light | Score | What it means |
+  |---|---|---|
+  | **Green** | 70–100 | Working. |
+  | **Orange** | 40–69 | Room to move the score. |
+  | **Red** | 0–39 | Critical: this measure is pulling the brand down. |
+</div>
+
+<div className="pok-band pok-band--teal">
+  <div className="pok-label">05 // Start here</div>
+
+  <h2>Test both minds on your own URL</h2>
+
+  <p>Run the free X-RAY to see your HI and AI lights, then order Brand Perception Truth for the full read.</p>
+
+  <a className="pok-button" href="/diagnose/xray">Run the free X-RAY →</a>
+</div>

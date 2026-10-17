@@ -1,45 +1,118 @@
 ---
-title: "Pokpok MCP: Query Brand Perception Data Inside Claude"
+title: "PokPok in Claude and ChatGPT"
 sidebarTitle: "MCP Overview"
-description: "The Pokpok MCP integration lets you ask Claude natural-language questions about brand perception data — scores, categories, and market positioning."
+description: "Add PokPok to Claude or ChatGPT and ask about a brand: the chat shows a PokPok page with key numbers, cards and infographics drawn from PokPok's stored reports."
 ---
 
-The Pokpok MCP (Model Context Protocol) integration lets you query Pokpok's brand perception database directly inside Claude — asking natural-language questions about brand markers, saturation scores, and category intelligence. Instead of exporting data and building spreadsheets, you can ask Claude questions and get structured answers drawn from Pokpok's live brand perception database.
+<div className="pok-lead">
+  Ask Claude or ChatGPT about a brand and the answer arrives as a **PokPok page inside the chat**: key numbers, cards and infographics, all drawn from PokPok's stored reports. You add PokPok once per app; it takes about two minutes.
+</div>
 
-## What Is MCP?
+<div className="pok-band pok-band--pink">
+  <div className="pok-label">01 // What you get in the chat</div>
 
-MCP is Anthropic's open standard for giving AI assistants access to external data sources. It works like a secure bridge between Claude and an external service — Claude can call tools exposed by the MCP server, retrieve data, and reason over it in the same conversation. The Pokpok MCP server exposes brand perception data to Claude as a set of read-only tools, so Claude can query the database on your behalf without you ever leaving the chat interface.
+  <h2>Your brand, read by people and by AI, without leaving the conversation</h2>
 
-## What You Can Do
+  <div className="pok-grid pok-grid--2">
+    <div className="pok-tile">
+      <div className="pok-tile__kicker">ONE BRAND</div>
+      <h3>"Show Georganics with POKPOK."</h3>
+      <p>Key numbers, the brand card, who AI names instead, how people read the page, the five uncomfortable truths and what to fix first.</p>
+    </div>
+    <div className="pok-tile">
+      <div className="pok-tile__kicker">COMPARE</div>
+      <h3>"Compare Georganics, banda and Dragon Rouge with POKPOK."</h3>
+      <p>A leaderboard, people against AI, the five AI readings side by side and a scatter.</p>
+    </div>
+    <div className="pok-tile">
+      <div className="pok-tile__kicker">TOP BRANDS</div>
+      <h3>"Show the top AI-scored brands with POKPOK."</h3>
+      <p>A leaderboard, people against AI, and every score on one line with the average.</p>
+    </div>
+    <div className="pok-tile">
+      <div className="pok-tile__kicker">YOUR BRAND</div>
+      <h3>"How is our brand doing? (with POKPOK)"</h3>
+      <p>Your own brand's page. This one needs you to sign in with your PokPok account.</p>
+    </div>
+  </div>
 
-<CardGroup cols={3}>
-  <Card title="Ask Natural-Language Questions" icon="message">
-    Query brand perception data in plain English. No technical knowledge required — Claude translates your question into a query and returns the results.
-  </Card>
-  <Card title="Compare Across Categories" icon="chart-bar">
-    Compare saturation scores across brand markers and categories, or benchmark individual brands against category leaders.
-  </Card>
-  <Card title="Explore Category Positioning" icon="binoculars">
-    Investigate how category leaders are positioned across the 17 brand perception markers without leaving your Claude conversation.
-  </Card>
-</CardGroup>
+  <p className="pok-tile__note">Georganics, banda and Dragon Rouge have public PokPok reports, so these questions work without signing in.</p>
+</div>
 
-## Available MCP Tools
+<div className="pok-band">
+  <div className="pok-label">02 // Who sees what</div>
 
-| Tool | What It Does |
-|---|---|
-| `pokpok_about` | Explains the POKPOK AI Score and data model — a good starting point to understand what data is available |
-| `pokpok_list_tables` | Lists all available brand perception data tables and their columns |
-| `pokpok_query` | Runs a read-only query against Pokpok's brand perception database and returns results |
+  <h2>Public reports for everyone, your own reports after sign-in</h2>
 
-## Safety and Limits
+  | You are | You can read |
+  |---|---|
+  | Not signed in | Every public PokPok report |
+  | Signed in with your PokPok email and password | Public reports plus the reports your account ordered; "our brand" opens your own report |
 
-The Pokpok MCP server is read-only. You cannot write, update, or delete any data through the integration. Each query is subject to a **1,000 row maximum** and a **5-second timeout** — ask Claude to focus your question on a specific category or set of brands to keep results fast and readable.
+  Tracking how often AI answers name your brand, and making a shareable page, both need sign-in.
 
-<Note>
-  **Pilot feature.** The Pokpok MCP is currently free with no authentication required. Future versions will require a Pokpok subscription and will authenticate via OAuth 2.1.
-</Note>
+  <Note>
+    Signing out on pokpok.ai also disconnects PokPok in Claude and ChatGPT. Stay signed in on the site while you use it in a chat.
+  </Note>
+</div>
 
-<Card title="Set Up the MCP Connector" icon="plug" href="/integrations/mcp-setup">
-  Ready to connect? The setup takes about two minutes in either claude.ai or Claude Desktop.
-</Card>
+<div className="pok-band pok-band--yellow">
+  <div className="pok-label">03 // How it works</div>
+
+  <h2>Your assistant asks, PokPok answers from the stored report</h2>
+
+  <div className="pok-grid pok-grid--2">
+    <div className="pok-tile">
+      <h3>PokPok only reads reports</h3>
+      <p>Every answer is a stored PokPok report: it says when the report was measured. Nothing in a report can be changed from the chat.</p>
+      <p className="pok-tile__note">One exception writes: a shareable page. It stores a new page and returns its address.</p>
+    </div>
+    <div className="pok-tile">
+      <h3>Your assistant does the thinking</h3>
+      <p>PokPok's server runs no AI model. Claude or ChatGPT picks the right PokPok tool, reads the numbers and answers in words beside the page.</p>
+    </div>
+    <div className="pok-tile">
+      <h3>Two scores, kept apart</h3>
+      <p>How people read the page and how AI engines read it are two separate 0–100 scales. In the chat, PokPok reports each one on its own.</p>
+      <p className="pok-tile__note">See [Scoring](/concepts/scoring).</p>
+    </div>
+    <div className="pok-tile">
+      <h3>Large lists come in pages</h3>
+      <p>A table question returns 50 rows by default and at most 200 per call; ask for the next rows to see more.</p>
+    </div>
+  </div>
+
+  <AccordionGroup>
+    <Accordion title="The 15 PokPok tools your assistant can call">
+
+      | Tool | What it gives |
+      |---|---|
+      | `pokpok_show` | The answer drawn as a PokPok page inside the chat |
+      | `pokpok_brand_report` | One brand's report: scores, the five people metrics, the five AI metrics, the 17 markers, alignment, truths, fixes, who AI names instead |
+      | `pokpok_compare` | Two to ten brands side by side |
+      | `pokpok_find` | Which reports and studies exist for a name, website, Amazon listing or category |
+      | `pokpok_my_reports` | The reports your account may read (needs sign-in) |
+      | `pokpok_catalog` | What PokPok measures: products, category studies, tracked brands, market averages |
+      | `pokpok_listing_report` | One Amazon listing against the brand's own website |
+      | `pokpok_category_report` | A category study: who leads, what is crowded, what nobody claims, its five truths |
+      | `pokpok_visibility` | How often ChatGPT, Gemini and Google AI answers name a tracked brand |
+      | `pokpok_citations` | Which websites and pages AI engines cite for a tracked brand's questions |
+      | `pokpok_ai_answers` | The AI answers themselves, as stored |
+      | `pokpok_define` | What each marker, metric and scale means |
+      | `pokpok_query` | Rows of the report tables, with filters, for questions the other tools do not cover |
+      | `pokpok_fetch` | Any stored part of one report by its id |
+      | `pokpok_page` | A shareable web page in PokPok's design, with its address (needs sign-in) |
+
+    </Accordion>
+  </AccordionGroup>
+</div>
+
+<div className="pok-band pok-band--teal">
+  <div className="pok-label">04 // Start here</div>
+
+  <h2>Add PokPok to Claude or ChatGPT</h2>
+
+  <p>Two addresses, one per app, and a sign-in with your PokPok email and password. About two minutes per app.</p>
+
+  <a className="pok-button" href="/integrations/mcp-setup">MCP Setup →</a>
+</div>

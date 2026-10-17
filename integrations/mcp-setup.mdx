@@ -1,76 +1,126 @@
 ---
-title: "Pokpok MCP Setup: Connect to Claude in Two Minutes"
+title: "Add PokPok to Claude and ChatGPT"
 sidebarTitle: "MCP Setup"
-description: "Add the Pokpok MCP connector to claude.ai or Claude Desktop in two minutes — no API key or authentication required during the pilot."
+description: "Step-by-step: add PokPok as a custom connector in Claude or a custom MCP server in ChatGPT, then sign in with your PokPok email and password."
 ---
 
-Setting up the Pokpok MCP connector takes about two minutes. Once connected, you can ask Claude natural-language questions about brand perception data — saturation scores, category leaders, brand archetypes, and more — without leaving your conversation.
+<div className="pok-lead">
+  Each app gets its **own address** — the Claude one ends in `/private`, the ChatGPT one does not. Paste the right one, sign in with your PokPok email and password, and start a new chat. About two minutes per app.
+</div>
 
-## Setup in claude.ai
+<div className="pok-band">
+  <div className="pok-label">01 // The two addresses</div>
 
-<Steps>
-  <Step title="Open Settings">
-    Go to [claude.ai](https://claude.ai) and sign in. Click your profile icon in the top-right corner, then select **Settings**.
-  </Step>
-  <Step title="Navigate to Connectors">
-    In the Settings panel, select the **Connectors** tab.
-  </Step>
-  <Step title="Add a custom connector">
-    Click **Add connector**, then select **Custom** from the options.
-  </Step>
-  <Step title="Enter the Pokpok MCP URL">
-    In the connector URL field, enter:
-    ```
-    https://mcp.pokpok.ai
-    ```
-  </Step>
-  <Step title="Skip authentication">
-    No API key or authentication is required during the pilot. Leave any credential fields blank.
-  </Step>
-  <Step title="Save the connector">
-    Click **Save**. The Pokpok connector will appear as active in your connectors list.
-  </Step>
-  <Step title="Start querying">
-    Start a new conversation and ask a question about brand perception data. Try: *"What is the POKPOK AI Score?"*
-  </Step>
-</Steps>
+  <h2>Use each address only in its own app</h2>
 
-## Setup in Claude Desktop
+  | App | Address |
+  |---|---|
+  | Claude | `https://auth.pokpok.ai/functions/v1/pokpok-mcp-v6/private` |
+  | ChatGPT | `https://auth.pokpok.ai/functions/v1/pokpok-mcp-v6` |
 
-<Steps>
-  <Step title="Open Claude Desktop settings">
-    Launch Claude Desktop on your computer. Open **Settings** from the application menu.
-  </Step>
-  <Step title="Navigate to Connectors">
-    In Settings, select the **Connectors** section.
-  </Step>
-  <Step title="Add a custom connector">
-    Click **Add custom connector**.
-  </Step>
-  <Step title="Enter the Pokpok MCP URL">
-    In the URL field, enter:
-    ```
-    https://mcp.pokpok.ai
-    ```
-  </Step>
-  <Step title="Skip authentication">
-    No authentication is required. Leave any credential fields blank.
-  </Step>
-  <Step title="Save and activate">
-    Save the connector. Restart the connector if prompted to activate it.
-  </Step>
-</Steps>
+  Public reports work without signing in. To see the reports on your own account, sign in with your PokPok email and password when the app asks.
+</div>
 
-## Verifying the Connection
+<div className="pok-band pok-band--yellow">
+  <div className="pok-label">02 // Claude</div>
 
-Once connected, verify the integration is working by asking Claude: **"What is the POKPOK AI Score?"**
+  <h2>claude.ai in the browser, or the Claude desktop app</h2>
 
-Claude will call the `pokpok_about` tool and return an explanation of the POKPOK AI Score and the data model. If you see a structured response explaining brand perception markers or scoring methodology, the connection is working correctly.
+  <Steps>
+    <Step title="Open Connectors">
+      Open **Settings** → **Connectors** and click **Add custom connector**.
+    </Step>
+    <Step title="Name and address">
+      Name: `POKPOK`. Address: `https://auth.pokpok.ai/functions/v1/pokpok-mcp-v6/private`. Click **Add**.
+    </Step>
+    <Step title="Connect and sign in">
+      Click **Connect** next to POKPOK. A pokpok.ai page opens: sign in with your PokPok **email and password**, then click **Allow** on the permission page. The page closes and POKPOK shows as connected.
+    </Step>
+    <Step title="Switch it on in a new chat">
+      Start a **new chat**, open the tools menu in the message box and make sure **POKPOK** is switched on.
+    </Step>
+  </Steps>
 
-<Tip>
-  After connecting, ask Claude to describe what Pokpok data is available before diving into questions. This gives you a clear picture of every data table and its columns, so you know exactly what you can explore.
-</Tip>
+  <Tip>
+    Sign in with email and password, not the Google button: the Google route ends on the pokpok.ai home page instead of coming back. If that happens, close the tab and click **Connect** again — you are already signed in.
+  </Tip>
 
-<Note>
-  Always use `https://mcp.pokpok.ai` as the connector URL. This is the stable, supported endpoint — using any other URL is not recommended and may break with future updates.
-</Note>
+  If you do not see **Add custom connector**, your Claude workspace owner has to allow custom connectors first.
+</div>
+
+<div className="pok-band">
+  <div className="pok-label">03 // ChatGPT</div>
+
+  <h2>chatgpt.com in the browser</h2>
+
+  <Steps>
+    <Step title="Add a custom MCP server">
+      Go to **chatgpt.com/plugins** and click **Add** (top right) → **Add custom MCP server**. If that option is not there, open **Settings**, turn on **Developer mode** and come back.
+    </Step>
+    <Step title="Fill in the server">
+      Name: `POKPOK`. Address: `https://auth.pokpok.ai/functions/v1/pokpok-mcp-v6`. Authentication: **OAuth** (if it asks).
+    </Step>
+    <Step title="Create it">
+      Accept the warning ("I understand and want to continue") and click **Create**.
+    </Step>
+    <Step title="Connect and sign in">
+      A pokpok.ai page opens. Sign in with your PokPok **email and password** (not Google), then click **Allow**.
+    </Step>
+    <Step title="Select it in a new chat">
+      Start a **new chat** and select **POKPOK** in the message box. If you see older POKPOK entries, select only this one.
+    </Step>
+  </Steps>
+
+  <h3>ChatGPT desktop app (the "MCP servers" page)</h3>
+
+  <Steps>
+    <Step title="Add the server">
+      Open the app's **Settings** → **MCP servers** → **Add server**. Name: `pokpok`. Type: **Streamable HTTP**. URL: `https://auth.pokpok.ai/functions/v1/pokpok-mcp-v6`.
+    </Step>
+    <Step title="Save">
+      Leave the token and headers empty and click **Save**.
+    </Step>
+    <Step title="Authenticate">
+      Back in the list, click **Authenticate** next to `pokpok`, sign in on pokpok.ai and click **Allow**.
+    </Step>
+    <Step title="Switch it on">
+      Make sure its switch is **on**, and switch **off** any older POKPOK server in the same list.
+    </Step>
+  </Steps>
+</div>
+
+<div className="pok-band pok-band--yellow">
+  <div className="pok-label">04 // Check it works</div>
+
+  <h2>Ask about a public report first</h2>
+
+  In a new chat with POKPOK selected, ask: **"Show Georganics with POKPOK."** Georganics has a public report, so this works signed in or not. You should see a PokPok page with key numbers, the brand card and the five uncomfortable truths.
+
+  <AccordionGroup>
+    <Accordion title="A plain text answer, no PokPok page">
+      Ask again: "Show it as a POKPOK page." Check that POKPOK is selected in this chat.
+    </Accordion>
+    <Accordion title="&quot;Couldn't identify your brand&quot; when asking about &quot;our brand&quot;">
+      You are not signed in. Reconnect POKPOK (Connect in Claude, or the connect step in ChatGPT) and sign in.
+    </Accordion>
+    <Accordion title="The page looks old or wrong">
+      Start a new chat. An open chat can keep an older version of the page.
+    </Accordion>
+    <Accordion title="PokPok stopped working after you signed out on pokpok.ai">
+      Signing out on pokpok.ai also disconnects Claude and ChatGPT. Reconnect and sign in again — and don't press **Sign out** on pokpok.ai while you use PokPok in a chat.
+    </Accordion>
+    <Accordion title="You want to know which version is live">
+      Open `https://auth.pokpok.ai/functions/v1/pokpok-mcp-v6` in a browser: it shows the version and when it was built.
+    </Accordion>
+  </AccordionGroup>
+</div>
+
+<div className="pok-band pok-band--teal">
+  <div className="pok-label">05 // Next</div>
+
+  <h2>Connected. Now ask the right questions.</h2>
+
+  <p>Say "with POKPOK" in each question so the assistant uses it.</p>
+
+  <a className="pok-button" href="/integrations/mcp-queries">What to ask →</a>
+</div>

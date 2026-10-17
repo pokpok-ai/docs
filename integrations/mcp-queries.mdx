@@ -1,53 +1,120 @@
 ---
-title: "Asking Claude About Brand Perception Data via Pokpok MCP"
+title: "What to Ask PokPok in Claude and ChatGPT"
 sidebarTitle: "MCP Queries"
-description: "Ask Claude natural-language questions about brand perception scores, category saturation, and market positioning — Pokpok MCP handles the data retrieval."
+description: "Example questions that work today on PokPok's public reports and category studies, plus the ones that need you signed in to your own account."
 ---
 
-Once your Pokpok MCP connector is set up in Claude, you can ask natural-language questions to explore brand perception data across categories, markers, and individual brands. Claude handles translating your question into a data query — you just need to know what you want to find out.
+<div className="pok-lead">
+  Start each question in a **new chat** with POKPOK selected, and say **"with POKPOK"** so the assistant uses it. Every example below runs on a report or study that exists today.
+</div>
 
-## Example Questions to Ask Claude
+<div className="pok-band pok-band--yellow">
+  <div className="pok-label">01 // Start with one brand</div>
 
-Try these prompts to get started. Claude will use the Pokpok connector to retrieve and interpret the results.
+  <h2>Five questions, five PokPok pages</h2>
 
-<AccordionGroup>
-  <Accordion title="Category White Space">
-    - "Which brand markers are least saturated in the moisturizer category?"
-    - "Where is the white space in skincare based on current saturation scores?"
-    - "What are the 5 Uncomfortable Truths for the moisturizer category this month?"
-  </Accordion>
-  <Accordion title="Brand Rankings and Scores">
-    - "Show me the top 15 brands in skincare sorted by overall perception score"
-    - "Compare the AI Findability scores across brands Pokpok has scanned"
-    - "Which brands score highest on Emotional Benefits vs Functional Benefits?"
-  </Accordion>
-  <Accordion title="Category Leader Analysis">
-    - "What archetypes are most common among category leaders in [your category]?"
-    - "Compare brand archetypes across the 15 category leaders in moisturizers"
-    - "Show me all Category Perception Truth reports for skincare"
-  </Accordion>
-  <Accordion title="Marker Deep Dives">
-    - "Show me the saturation scores for all 17 markers in skincare"
-    - "Which perception markers are most competitive in my category?"
-    - "What is the average AI score for brands in the premium skincare segment?"
-  </Accordion>
-</AccordionGroup>
+  | Ask | What you get in the chat |
+  |---|---|
+  | Show Georganics with POKPOK. | Key numbers, the brand card, who AI names instead, how people read the page, the five uncomfortable truths, what to fix first |
+  | Compare Georganics, banda and Dragon Rouge with POKPOK. | Leaderboard, people against AI, the five AI readings side by side, a scatter |
+  | Show the top AI-scored brands with POKPOK. | Leaderboard, people against AI, every score on one line with the average |
+  | Who does AI recommend instead of Georganics? (with POKPOK) | Who AI names, with the brand in question in yellow |
+  | How is our brand doing? (with POKPOK) | Your own brand's page — needs sign-in |
 
-## How It Works
+  Use any brand name or website PokPok holds a report for instead of Georganics. After the page, the assistant answers in words beside it; ask follow-up questions as normal.
+</div>
 
-When you ask Claude a question about brand perception data, it uses the Pokpok connector to retrieve the relevant data and returns the results directly into your conversation. Claude then interprets the data and presents it in a readable format — you never need to think about the underlying data structure.
+<div className="pok-band">
+  <div className="pok-label">02 // Go deeper</div>
 
-The connection is entirely read-only — no data can be written, updated, or deleted. Results are capped at 1,000 rows per question to keep responses fast. If you ask a very broad question, Claude may automatically narrow the scope or suggest you refine your question to a specific category or time period.
+  <h2>Markers, categories and definitions</h2>
 
-## Limits at a Glance
+  <AccordionGroup>
+    <Accordion title="One brand, one part of the report">
 
-| Constraint | Detail |
-|---|---|
-| Query type | Read-only data retrieval |
-| Maximum rows returned | 1,000 per question |
-| Response timeout | 5 seconds |
-| Write operations | Not permitted |
+      - "Compare Emotional Benefits and Functional Benefits for Georganics, as people read them and as AI reads them (with POKPOK)."
+      - "Where do people and AI disagree most about Georganics? Show the alignment per marker (with POKPOK)."
+      - "What should Dragon Rouge fix first, and what does each fix move? (with POKPOK)"
 
-<Tip>
-  Ask Claude to interpret results for you — *"Based on these saturation scores, where is the white space in skincare?"* — rather than just requesting raw data. Claude can reason over the results and surface actionable insights in the same response.
-</Tip>
+    </Accordion>
+    <Accordion title="A category study">
+
+      - "Who leads Global Branding Agencies? (with POKPOK)"
+      - "In Blemish-Prone Skin: Website Comparison, which marker territories are crowded and which does nobody hold? (with POKPOK)"
+      - "What are the five truths of Global Branding Agencies? (with POKPOK)"
+      - "Who leads the Moisturisers shelf study on Amazon? (with POKPOK)"
+
+    </Accordion>
+    <Accordion title="What exists and what it means">
+
+      - "Which category studies can I ask about? (with POKPOK)"
+      - "What does the FIND score mean, and how is it different from TRUST? (with POKPOK)"
+      - "What does alignment percent mean? (with POKPOK)"
+
+    </Accordion>
+    <Accordion title="Questions the other tools don't shape">
+
+      - "List the brands with an overall score over 70 measured since August (with POKPOK)."
+
+      Not signed in, this reads public reports only.
+
+    </Accordion>
+  </AccordionGroup>
+
+  <p className="pok-tile__note">The per-marker AI reading and alignment are in newer reports such as Georganics; on an older report the answer says the part is missing. Global Branding Agencies (August 2026), Blemish-Prone Skin: Website Comparison (October 2026) and the Moisturisers Amazon shelf study (August 2026) are public PokPok category studies.</p>
+</div>
+
+<div className="pok-band pok-band--pink">
+  <div className="pok-label">03 // Your own brand</div>
+
+  <h2>Sign in, and "our brand" means yours</h2>
+
+  When you ask about "our brand", "us", "my site" or "we" without naming a brand, PokPok opens the report your account ordered. Sign in first, or the answer is "Couldn't identify your brand".
+
+  <div className="pok-grid pok-grid--2">
+    <div className="pok-tile">
+      <h3>Your reports</h3>
+      <p>"What reports do I have? (with POKPOK)" lists what your account bought or was given.</p>
+    </div>
+    <div className="pok-tile">
+      <h3>AI visibility</h3>
+      <p>"Which engine names us least: ChatGPT, Gemini or Google AI? (with POKPOK)" — for a brand PokPok tracks for your account.</p>
+    </div>
+    <div className="pok-tile">
+      <h3>Cited websites</h3>
+      <p>"Is our website cited when AI answers our buyers' questions? (with POKPOK)"</p>
+    </div>
+    <div className="pok-tile">
+      <h3>A page to share</h3>
+      <p>"Make a shareable PokPok page of our five truths." Returns the page's address.</p>
+    </div>
+  </div>
+</div>
+
+<div className="pok-band">
+  <div className="pok-label">04 // How answers behave</div>
+
+  <h2>Stored numbers, quoted as they are</h2>
+
+  | | |
+  |---|---|
+  | Where numbers come from | PokPok's stored reports; each answer says when the report was measured |
+  | Changing report data | Not possible from the chat; a shareable page is the only thing PokPok stores |
+  | Rows per table question | 50 by default, at most 200 per call; ask for the next rows to see more |
+  | People score and AI score | Two separate 0–100 scales, each reported on its own |
+  | A part the report lacks | The answer says so; PokPok does not fill it in |
+
+  <Tip>
+    Ask for the reasoning, not just the numbers: "Based on Georganics' five truths, what should we change on the homepage first? (with POKPOK)". The assistant reasons over the stored report in the same reply.
+  </Tip>
+</div>
+
+<div className="pok-band pok-band--teal">
+  <div className="pok-label">05 // Not connected yet?</div>
+
+  <h2>Add PokPok first</h2>
+
+  <p>Claude and ChatGPT each need their own address and a sign-in with your PokPok email and password.</p>
+
+  <a className="pok-button" href="/integrations/mcp-setup">MCP Setup →</a>
+</div>

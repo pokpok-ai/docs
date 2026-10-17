@@ -1,51 +1,64 @@
 ---
-title: "View and Manage Your Pokpok Reports and Subscriptions"
+title: "View and Manage Your PokPok Reports"
 sidebarTitle: "My Reports"
-description: "Track report status, access completed brand analyses, and manage subscriptions from your Pokpok dashboard — reports are always available at pokpok.ai."
+description: "Find every report you ordered at pokpok.ai/my-reports, follow its progress, open it when it is ready, and reach your invoices through the customer portal."
 ---
 
-After ordering a Pokpok report, you can track its status and access it any time from your dashboard at pokpok.ai. Reports remain in your account permanently — one-off purchases never expire, and monthly subscription editions accumulate in your dashboard as each new edition is delivered.
+<div className="pok-lead">
+  Every report you pay for appears on [pokpok.ai/my-reports](https://pokpok.ai/my-reports), newest first. Diagnose reports are delivered in ~72 hours, and you get an email when yours is ready.
+</div>
 
-## Report Status Lifecycle
+<div className="pok-band pok-band--yellow">
+  <div className="pok-label">01 // Open your reports</div>
 
-Your report moves through four states from order to delivery:
+  <h2>Four steps</h2>
 
-- **Scanning** — Pokpok is scraping and analysing your URL or ASIN. This stage typically completes within a few hours of your order.
-- **Processing** — AI analysis is running against the scraped data. This is the longest stage; allow up to 72 hours from your order time.
-- **Ready** — your report is complete and available to open in the interactive dashboard.
-- **Error** — something went wrong during processing. Pokpok will notify you and automatically retry. If the error persists, contact support.
+  <Steps>
+    <Step title="Sign in">
+      Go to [pokpok.ai/signin](https://pokpok.ai/signin) and sign in with the same account you ordered with: Google, Apple, or email and password.
+    </Step>
+    <Step title="Open My Reports">
+      Go to [pokpok.ai/my-reports](https://pokpok.ai/my-reports). Your orders are listed newest first by payment date, under three tabs: **ALL ORDERS**, **Delivered** and **In progress**.
+    </Step>
+    <Step title="Check the button on each order">
+      The button on each order card tells you where the report is (see the table below).
+    </Step>
+    <Step title="Open the report">
+      Press **VIEW REPORT** to open the full report. It stays in the list, so you can come back to it.
+    </Step>
+  </Steps>
+</div>
 
-## Accessing Your Reports
+<div className="pok-band">
+  <div className="pok-label">02 // Order status</div>
 
-<Steps>
-  <Step title="Sign in to pokpok.ai">
-    Go to [pokpok.ai](https://pokpok.ai) and sign in with the Google account you used when you placed your order.
-  </Step>
-  <Step title="Open My Reports">
-    Click **My Reports** in the main navigation. All reports tied to your account appear here, sorted by order date.
-  </Step>
-  <Step title="Check the status">
-    Each report shows its current status — Scanning, Processing, or Ready — alongside the URL or ASIN and the order date.
-  </Step>
-  <Step title="Open a ready report">
-    Click any report with a **Ready** status to open the full interactive analysis. You can return to this view at any time.
-  </Step>
-</Steps>
+  <h2>What the order card shows</h2>
 
-## Subscriptions in Your Dashboard
+  | Card shows | What it means | What to do |
+  |---|---|---|
+  | **ANALYZING…** with the current step, for example "Scanning homepage…", "Checking AI visibility…", "Synthesising 5 truths…" | The report is being made | Nothing: you get an email when it is ready |
+  | **VIEW REPORT** | The report is ready | Press it |
+  | **RETRY** | The run failed; PokPok is notified by email | Press it to run the report again |
 
-Monthly subscription editions appear as separate line items in your dashboard as each edition refreshes. Each item shows the scan period it covers, so you can track how your category intelligence evolves month over month. Older editions remain accessible — they are not replaced or removed when a new edition arrives.
+  <p className="pok-tile__note">The same order list also appears on each product's own report page. Free X-RAY scans are not listed here.</p>
+</div>
 
-## Managing Your Subscription
+<div className="pok-band pok-band--pink">
+  <div className="pok-label">03 // Can't see a report?</div>
 
-To update billing details, view payment history, download invoices, or cancel a subscription:
+  <h2>Reports belong to the account that ordered them</h2>
 
-1. Click your account menu in the top-right corner of pokpok.ai
-2. Select **Customer Portal**
-3. From the portal you can view all past payments, download PDF invoices, and cancel or modify any active subscription
+  <Note>
+    A report is tied to the PokPok account that placed the order, not to the browser. If the list is empty, you are probably signed in with a different account: sign out and sign in again the way you did at checkout.
+  </Note>
+</div>
 
-Cancellations take effect at the end of your current billing period. You will not be charged again after cancellation, and your existing reports remain accessible.
+<div className="pok-band pok-band--teal">
+  <div className="pok-label">04 // Billing</div>
 
-<Note>
-  Reports are tied to your Google account email. If you sign in with a different Google account, your reports will not be visible. Always use the same Google account you used at checkout.
-</Note>
+  <h2>Invoices and payment history</h2>
+
+  <p>On My Reports, under **Manage Billing & Invoices**, press **ACCESS CUSTOMER PORTAL**. The portal, run by Polar, shows your past payments and invoices.</p>
+
+  <a className="pok-button" href="https://pokpok.ai/my-reports">Open My Reports →</a>
+</div>
