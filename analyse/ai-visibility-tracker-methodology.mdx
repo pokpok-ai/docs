@@ -1,0 +1,61 @@
+---
+title: "AI Visibility Tracker: How We Measure"
+sidebarTitle: "Tracker methodology"
+description: "How the PokPok AI Visibility Tracker at geo.pokpok.ai measures a brand in AI answers, disclosed item by item against the IAB's Provider Disclosure Framework (Measuring Visibility in the AI Era, August 2026)."
+---
+
+<div className="pok-lead">
+  The AI Visibility Tracker asks AI engines your buyers' questions **every day** and records **whether each answer names your brand**. This page answers each of the IAB's required disclosures, so you can judge the numbers for yourself.
+</div>
+
+<div className="pok-band pok-band--pink">
+  <div className="pok-label">01 // What is being measured</div>
+
+  <h2>Which engines, which questions, from where</h2>
+
+  | IAB disclosure | What PokPok does |
+  |---|---|
+  | **Platform coverage** | Four engines: **ChatGPT**, **Gemini**, **Google AI Mode** and **Google AI Overview**, each as a buyer gets it in the app, logged out. The model version is the one the app uses on the day; the apps do not report it, so it is not recorded. Claude, Perplexity and Grok are not part of the daily measurement. |
+  | **Prompt library construction** | Up to **50 questions per brand**, asked once a day. A new brand starts from the buyer questions PokPok's report engine writes from its website: six groups of buyer moments plus two sharp questions. You can replace or add questions. Every question counts equally; none is weighted. Each brand is asked in one market (its country); questions are not varied by demographic or cultural framing. |
+  | **Query sourcing** | Provider-defined (synthetic): written from your own website by PokPok's report engine, plus any questions you write. Google search demand per question can be measured alongside, but it does not choose the questions. |
+  | **Source type classification** | The pages each answer cites are stored and listed by website. They are not sorted into brand-owned, retailer, editorial or institutional types, and they are not weighted. |
+</div>
+
+<div className="pok-band">
+  <div className="pok-label">02 // How it is being measured</div>
+
+  <h2>Asked like a buyer, counted by plain rules</h2>
+
+  | IAB disclosure | What PokPok does |
+  |---|---|
+  | **Data collection architecture** | **Active query simulation**: PokPok sends the questions to the engines and captures the answers. No panel, no platform-supplied data, no mix of the two. |
+  | **Data collection methodology** | Automated collection of the answers the consumer apps give, through a third-party collection service, with **web search on** (as the apps answer buyers). Each question is asked **once a day per engine**, from the brand's market. A failed ask is retried at least 6 hours later, at most twice more that day. |
+  | **Panel validity** | Not applicable: no panel is used. |
+  | **Data validation** | No external validation (no platform-native or first-party analytics). Entity rules: a brand or competitor counts as named only where its name stands as a **whole word** (not "Intel" inside "intelligence"); a brand's name comes from the set-up research, never from its web address. Each brand's first measurement is its baseline. No outliers are removed. |
+  | **Mention detection, attribution and sentiment** | Code checks each stored answer for the brand's names and its tracked competitors' names, by the whole-word rule. No model reads or labels the answers. **Sentiment and position are not measured.** |
+  | **Factual accuracy classification** | **Not measured.** Answers are shown as the engines gave them; PokPok does not judge them as accurate, inaccurate or hallucinated. |
+
+  <Note>
+    One run per question, per engine, per day. Engine answers vary by nature, so the tracker shows each day's answer as given and draws the line over days; it does not report ranges for a single day.
+  </Note>
+</div>
+
+<div className="pok-band pok-band--yellow">
+  <div className="pok-label">03 // How the data is maintained</div>
+
+  <h2>History, and what happens when rules change</h2>
+
+  | IAB disclosure | What PokPok does |
+  |---|---|
+  | **Historical data and versioning** | History starts at each brand's first measurement and is kept. Engine model updates are not recorded, because the apps do not report a version. When PokPok changes its counting rule, or a brand's or competitor's names change, **every stored answer of that brand is counted again** with the new rule, so the whole history stays comparable; each re-count is recorded and can be undone. Demo brands carry generated sample history, shown as sample. |
+</div>
+
+<div className="pok-band pok-band--teal">
+  <div className="pok-label">04 // The standard</div>
+
+  <h2>Read the framework this page follows</h2>
+
+  <p>IAB, Measuring Visibility in the AI Era (August 2026): Provider Disclosure Framework, pages 27–29.</p>
+
+  <a className="pok-button" href="https://www.iab.com/wp-content/uploads/2026/07/IAB_Measuring_Visibility_in_the_AI_Era_August_2026-1.pdf">IAB framework (PDF) →</a>
+</div>
