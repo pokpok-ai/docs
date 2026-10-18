@@ -1,0 +1,88 @@
+---
+title: "Mentions, Cited, Found but Not Cited"
+sidebarTitle: "Mentions · Cited · Found"
+description: "The three lists PokPok keeps for every AI answer: the brands it names, the pages it cites, and the pages it read but left out, with a real worked example and what each list tells an agency."
+---
+
+<div className="pok-lead">
+  For every answer, three lists. **Mentions**: the brands the answer names. **Cited**: the pages the engine shows as its sources. **Found but not cited**: the pages the engine read for this answer and did not use. Together they say where the engine's opinion of a brand comes from.
+</div>
+
+<div className="pok-band pok-band--pink">
+  <div className="pok-label">01 // One real answer</div>
+
+  <h2>Georganics, ChatGPT, October 2026</h2>
+
+  <p>Question: <em>"What are good natural oral care products in the UK that are alternatives to Weleda?"</em></p>
+
+  | List | What the engine did |
+  |---|---|
+  | **Found** (7 pages) | two Dentaly guides, a Mulberry Wholefoods category page, Truthpaste's plastic-free page, Kingfisher's About page, Ethical Consumer's toothpaste guide, and **Georganics' own page** <code>georganics.com/pages/fluoride-toothpaste</code> |
+  | **Cited** | none: the answer carries no link |
+  | **Mentions** | Georganics, Truthpaste, Kingfisher, Ben & Anna, Green People |
+  | **Found but not cited** | all seven pages, Georganics' among them |
+
+  <p>The engine read Georganics' page, named Georganics, and gave the buyer no link to it or to anyone. A visibility number says "named: yes" and stops. The lists say the page was read and not used as evidence, and name the six pages it was weighed against.</p>
+</div>
+
+<div className="pok-band">
+  <div className="pok-label">02 // Definitions</div>
+
+  <h2>How each list is counted</h2>
+
+  | List | Rule | Which engines give it |
+  |---|---|---|
+  | **Mentions** | A brand counts as named when its name, another of its names, or its website stands as a whole word in the answer text. Counted once per answer however often it repeats. | All four |
+  | **Cited** | A page the engine attached to the answer: a link in the text, a source tied to a sentence, or a source card. | ChatGPT, Gemini, Google AI Mode; Google AI Overview by website |
+  | **Found but not cited** | A page in the list of pages the engine read for this answer that is not among its cited pages. | ChatGPT returns its read list; Gemini and Google return only cited pages, so for them this list is empty by nature, not by measurement |
+
+  <p>Counts for a brand come from the brand's own pages in each list: pages of its website, and pages whose cited text names the brand.</p>
+
+  <Note>
+    Ahrefs groups cited and background-read pages together as "Found in". PokPok keeps them apart: a cited page is evidence the engine stands behind; a page merely read is not. The IAB's standard calls for the same distinction (Citation Rate counts only linked or named references).
+  </Note>
+</div>
+
+<div className="pok-band pok-band--yellow">
+  <div className="pok-label">03 // Where the opinion comes from</div>
+
+  <h2>Four states, per answer</h2>
+
+  <div className="pok-grid pok-grid--2">
+    <div className="pok-tile">
+      <div className="pok-tile__kicker">NAMED, YOUR PAGE CITED</div>
+      <h3>From evidence</h3>
+      <p>The strongest state: the engine read you, cited you, and named you. Georganics on ChatGPT: 13 of 80 answers in 10 days.</p>
+    </div>
+    <div className="pok-tile">
+      <div className="pok-tile__kicker">YOUR PAGE FOUND, NOT CITED</div>
+      <h3>Read, then dropped</h3>
+      <p>The engine opened your page and did not use it. Toyota on ChatGPT: 17 of 149 answers; Georganics: 3 of 80. These pages are the agency's work list.</p>
+    </div>
+    <div className="pok-tile">
+      <div className="pok-tile__kicker">NAMED, NO PAGE OF YOURS</div>
+      <h3>From memory</h3>
+      <p>The engine names you without reading or citing anything of yours. Toyota on ChatGPT: 126 of 149 answers. Memory moves slowly; a page can be changed today.</p>
+    </div>
+    <div className="pok-tile">
+      <div className="pok-tile__kicker">YOUR PAGE CITED, NOT NAMED</div>
+      <h3>Used, not credited</h3>
+      <p>The engine cites your page as a source but the answer never says your name. Rare for the brands below (Georganics: 0 of 80 on ChatGPT), common for brands whose pages are reference material.</p>
+    </div>
+  </div>
+
+  <p className="pok-tile__note">Figures: PokPok tracker, 9–18 October 2026, one answer per question per engine per day. They are examples of the states, not benchmarks.</p>
+</div>
+
+<div className="pok-band pok-band--teal">
+  <div className="pok-label">04 // Where you see it</div>
+
+  <h2>In the report and in the tracker</h2>
+
+  | | Brand Perception Truth -geo | AI Visibility Tracker |
+  |---|---|---|
+  | Mentions | every answer, every brand named, yours highlighted | visibility and share of voice per engine, per question, over time |
+  | Cited | every cited page per answer; pages cited from your site; the sites AI gets its facts from | cited pages and sites over time, by category and page type; competitors' cited pages |
+  | Found but not cited | per answer, brands | Not yet available |
+  | The four states | the "answers where AI read about you" count | Not yet available |
+</div>

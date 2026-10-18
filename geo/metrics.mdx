@@ -1,0 +1,77 @@
+---
+title: "GEO Metrics"
+sidebarTitle: "Metrics"
+description: "Every GEO number PokPok shows, with the IAB definition, PokPok's formula, its range and where it is available: visibility (mention rate), citation rate, share of voice, momentum, position and sentiment."
+---
+
+<div className="pok-lead">
+  Each metric below carries the IAB's definition (Measuring Visibility in the AI Era, August 2026), PokPok's exact formula, and where it is live. **Read each number with its definition**: two tools can report different figures for the same brand because they count differently.
+</div>
+
+<div className="pok-band pok-band--pink">
+  <div className="pok-label">01 // Presence</div>
+
+  <h2>Does the brand appear?</h2>
+
+  | Metric | IAB definition | PokPok formula | Live |
+  |---|---|---|---|
+  | **Visibility** (Mention Rate) | "responses containing a brand mention divided by total responses" | answers naming the brand ÷ all answers, per engine and overall | Tracker, report |
+  | **Citation rate** | "responses containing a brand citation divided by total responses"; a citation is "a linked reference (containing a hyperlink) or a named reference" | answers citing a page of the brand's website ÷ all answers. Named references without a link are not yet counted | Tracker: shown today as the brand's share of all citations; the IAB form is not yet available |
+  | **Share of voice** | "brand mentions as a proportion of all brand mentions within a defined competitive category" | the brand's named answers ÷ named answers of the brand and its tracked competitors. The category is the competitor list the client sets | Tracker |
+  | **Visibility momentum** | "percentage change in Mention Rate or Share of Voice between defined measurement periods" | this period against the equal period before it | Tracker |
+
+  <Note>
+    The IAB: "A brand can have a high Mention Rate and a low Citation Rate; the gap between the two is itself a meaningful signal." Toyota on ChatGPT, 10 days: named in 98.7% of answers, a page of toyota.com cited in 2.7%.
+  </Note>
+</div>
+
+<div className="pok-band">
+  <div className="pok-label">02 // Prominence</div>
+
+  <h2>Where, and how prominently?</h2>
+
+  | Metric | IAB definition | PokPok formula | Live |
+  |---|---|---|---|
+  | **Position** | "where the brand appears in the formatted AI response as a user sees it … its rank when multiple brands are listed" | the brand's place among all brands the answer names, in reading order, counted on the whole answer; averaged over answers naming the brand. Win rate = answers where the brand comes first ÷ all answers | Not yet available |
+</div>
+
+<div className="pok-band pok-band--yellow">
+  <div className="pok-label">03 // Portrayal</div>
+
+  <h2>In what context, with what accuracy?</h2>
+
+  | Metric | IAB definition | PokPok | Live |
+  |---|---|---|---|
+  | **Sentiment** | "whether the brand is described positively, neutrally, or negatively … providers must disclose their classification methodology … and accuracy benchmarks" | positive / neutral / negative / mixed, read beside the answer, never changing it | Not yet available |
+  | **Factual accuracy** | claims about the brand checked against a brand-supplied source of truth | the brand's own page is the source of truth PokPok already holds | Not yet available |
+  | **Every answer, word for word** | — | the report shows each answer as the engine gave it, the brands it names and how it describes yours | Report |
+</div>
+
+<div className="pok-band pok-band--teal">
+  <div className="pok-label">04 // Reading the numbers</div>
+
+  <h2>Three rules the IAB sets, and PokPok follows</h2>
+
+  <div className="pok-grid pok-grid--2">
+    <div className="pok-tile">
+      <div className="pok-tile__kicker">PER ENGINE</div>
+      <h3>Never one combined score</h3>
+      <p>"Providers must report results per platform separately." Every PokPok figure is shown per engine; the overall figure sits beside them, never instead of them.</p>
+    </div>
+    <div className="pok-tile">
+      <div className="pok-tile__kicker">TRENDS</div>
+      <h3>A line, not a point</h3>
+      <p>"Single-response measurement is not measurement." The report is one day's answers, labelled as such. The tracker asks every day and shows the line.</p>
+    </div>
+    <div className="pok-tile">
+      <div className="pok-tile__kicker">DISCLOSED</div>
+      <h3>Every rule on the page</h3>
+      <p>How questions are chosen, how answers are collected, how a mention is counted: all on the <a href="/analyse/ai-visibility-tracker-methodology">tracker methodology page</a>, item by item against the IAB's disclosure list.</p>
+    </div>
+    <div className="pok-tile">
+      <div className="pok-tile__kicker">SCOPE</div>
+      <h3>What is not measured</h3>
+      <p>Pages the engine read are available for ChatGPT only. Engine model versions are not reported by the apps. No panel, no platform-supplied data.</p>
+    </div>
+  </div>
+</div>

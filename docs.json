@@ -65,7 +65,16 @@
               "analyse/overview",
               "analyse/pokpok-index",
               "analyse/category-perception",
-              "analyse/customer-experience",
+              "analyse/customer-experience"
+            ]
+          },
+          {
+            "group": "GEO",
+            "pages": [
+              "geo/overview",
+              "geo/mentions-cited-found",
+              "geo/metrics",
+              "geo/for-agencies",
               "analyse/ai-visibility-tracker-methodology"
             ]
           },
