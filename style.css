@@ -137,6 +137,8 @@ html.dark { --nc: var(--pok-teal); }
 .pok-band--pink > * { --nc: var(--pok-pink) !important; }
 .pok-band--yellow > * { --nc: var(--pok-yellow) !important; }
 .pok-band--teal > * { --nc: var(--pok-teal) !important; }
+/* a kicker, note or anything else inside a tile sits on the tile's card colour, not on the band */
+.pok-tile > * { --nc: var(--pok-card) !important; }
 
 .pok-band, .pok-tile, .pok-gap, .pok-button, .pok-tile__kicker,
 .card, .callout, [data-component-part="step-indicator"],
