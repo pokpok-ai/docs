@@ -116,5 +116,20 @@
         ]
       }
     ]
+  },
+  "thumbnails": {
+    "preset": "classic",
+    "appearance": "dark",
+    "surface": "neutral",
+    "fonts": {
+      "family": "Instrument Serif",
+      "source": "/fonts/InstrumentSerif-Regular.ttf",
+      "format": "ttf"
+    },
+    "eyebrow": {
+      "source": "group",
+      "style": "bar",
+      "color": "#F5F900"
+    }
   }
 }
