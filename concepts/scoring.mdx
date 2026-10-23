@@ -1,7 +1,7 @@
 ---
 title: "How PokPok Scores Are Calculated"
 sidebarTitle: "Scoring"
-description: "Every PokPok score with its formula, range and bands: the POKPOK Brand Perception Score (0.6 × HI + 0.4 × AI), the HI and AI perception scores, the 60/40 marker alignment, category saturation and the X-RAY lights."
+description: "Every PokPok score with its formula, range and bands: the POKPOK Brand Perception Score (0.6 × HI + 0.4 × AI), the HI and AI perception scores, the 60/40 marker alignment, category saturation and distinctiveness."
 ---
 
 <div className="pok-lead">
@@ -18,10 +18,10 @@ description: "Every PokPok score with its formula, range and bands: the POKPOK B
   | **POKPOK Brand Perception Score** | How is the brand read, human and AI combined? (0.6 × HI + 0.4 × AI) | 0–100 | Brand Perception Truth |
   | **HI score** | How does the page land on people? | 0–100 | Brand Perception Truth, Category Perception Truth (PDP) |
   | **AI score** | Can AI find, read, know, trust and act on the page? | 0–100 | Brand Perception Truth |
-  | **Marker alignment %** | Does one read of a marker match the other? | 0–100% | Brand Perception Truth (Single URL) -geo, Brand Alignment Truth |
-  | **Saturation %** | How crowded is a territory in your category? | 0–100% | Category Perception Truth (PDP) |
+  | **Marker alignment %** | Does one read of a marker match the other? | 0–100% | Brand Perception Truth, Brand Alignment Truth |
+  | **Saturation %** | How crowded is a territory in your category? | 0–100% | Category Perception Truth (PDP and WWW) |
+  | **Distinctiveness score** | How much ground does a leader hold that its rivals do not? | 0–100 | Category Perception Truth (PDP and WWW) |
   | **POKPOK Index score** | How real is a product's climb on Amazon? | 0–100 | [POKPOK Index](/analyse/pokpok-index) |
-  | **X-RAY lights** | Quick health check of 6 metrics | 0–100 | Free X-RAY |
 </div>
 
 <div className="pok-band">
@@ -65,7 +65,7 @@ description: "Every PokPok score with its formula, range and bands: the POKPOK B
 
   <h2>Do two reads of a marker tell the same story?</h2>
 
-  <p>The same formula compares two reads of each of the [17 markers](/concepts/brand-markers). In **Brand Perception Truth (Single URL) -geo** the two reads are people's and ChatGPT's. In **Brand Alignment Truth** they are your website and your Amazon product page.</p>
+  <p>The same formula compares two reads of each of the [17 markers](/concepts/brand-markers). In **Brand Perception Truth** the two reads are people's and ChatGPT's. In **Brand Alignment Truth** they are your website and your Amazon product page.</p>
 
   <Steps>
     <Step title="Territory match: 60 points">
@@ -79,7 +79,7 @@ description: "Every PokPok score with its formula, range and bands: the POKPOK B
       Territory points + slider points, 0–100%. The arithmetic: same territory, one slider identical, one slider two steps apart = 60 + 20 + 0 = **80%**.
     </Step>
     <Step title="Overall">
-      Brand Alignment Truth: the sum of the 17 marker scores ÷ 17. The -geo report: the average over the markers both reads cover; markers one read did not cover are counted and shown, not averaged in.
+      Brand Alignment Truth: the sum of the 17 marker scores ÷ 17. Brand Perception Truth: the average over the markers both reads cover; markers one read did not cover are counted and shown, not averaged in.
     </Step>
   </Steps>
 
@@ -92,9 +92,9 @@ description: "Every PokPok score with its formula, range and bands: the POKPOK B
 </div>
 
 <div className="pok-band">
-  <div className="pok-label">04 // Category and quick-check scores</div>
+  <div className="pok-label">04 // Category scores</div>
 
-  <h2>Saturation, the Index and the X-RAY lights</h2>
+  <h2>Saturation, distinctiveness and the Index</h2>
 
   **Saturation %** is the share of category leaders standing in one territory of a marker. The **POKPOK Category Saturation Score** (0–100) averages, over the 17 markers, the saturation of each marker's most crowded territory.
 
@@ -105,7 +105,7 @@ description: "Every PokPok score with its formula, range and bands: the POKPOK B
   | 25–54% | **EMERGING NICHE** |
   | 0–24% | **STRATEGIC GAP** |
 
-  **X-RAY lights** cover 6 metrics (HI01–HI03, AI01–AI03): **Green** 70–100 · **Orange** 40–69 · **Red** 0–39.
+  **Distinctiveness score** (0–100), per leader: 100 minus the average saturation of the territories it stands in. High = it holds ground its rivals do not hold.
 
   The **POKPOK Index score** has nine bands, from UNSTOPPABLE FORCE (90–100) to FLATLINE (0–19): see [POKPOK Index](/analyse/pokpok-index).
 </div>
@@ -125,9 +125,9 @@ description: "Every PokPok score with its formula, range and bands: the POKPOK B
 <div className="pok-band pok-band--teal">
   <div className="pok-label">06 // Start here</div>
 
-  <h2>See your first two scores for free</h2>
+  <h2>See your scores on your own URL</h2>
 
-  <p>The X-RAY gives your HI and AI lights for any URL. The paid Brand Perception Truth gives the full HI and AI scores and the 17 markers.</p>
+  <p>Brand Perception Truth gives the full HI and AI scores and all 17 markers with their alignment, for €150, delivered next day.</p>
 
-  <a className="pok-button" href="/diagnose/xray">Run the free X-RAY →</a>
+  <a className="pok-button" href="/diagnose/brand-perception">Brand Perception Truth →</a>
 </div>

@@ -69,7 +69,7 @@
             ]
           },
           {
-            "group": "GEO",
+            "group": "AI Visibility Truth (GEO)",
             "pages": [
               "geo/overview",
               "geo/mentions-cited-found",
@@ -82,7 +82,6 @@
             "group": "Diagnose",
             "pages": [
               "diagnose/overview",
-              "diagnose/xray",
               "diagnose/brand-perception",
               "diagnose/brand-alignment",
               "diagnose/customer-experience"
@@ -98,7 +97,6 @@
             "group": "Account & Billing",
             "pages": [
               "account/plans-and-pricing",
-              "account/credits",
               "account/managing-reports"
             ]
           }
@@ -140,5 +138,15 @@
       "style": "bar",
       "color": "#F5F900"
     }
-  }
+  },
+  "redirects": [
+    {
+      "source": "/diagnose/xray",
+      "destination": "/diagnose/brand-perception"
+    },
+    {
+      "source": "/account/credits",
+      "destination": "/diagnose/brand-perception"
+    }
+  ]
 }
