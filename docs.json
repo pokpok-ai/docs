@@ -148,5 +148,13 @@
       "source": "/account/credits",
       "destination": "/diagnose/brand-perception"
     }
-  ]
+  ],
+  "description": "The Brand Perception OS\n\nEvery brand is now read twice: by people and by AI. POKPOK is the Brand Perception OS: a proprietary layer of clean brand data, read on one framework, that turns fragmented signals into a clear understanding of how a brand is perceived—and what to change first.",
+  "footer": {
+    "socials": {
+      "linkedin": "https://www.linkedin.com/company/pokpok-ai",
+      "threads": "https://threads.net/@pokpok.ai",
+      "instagram": "https://instagram.com/pokpok.ai"
+    }
+  }
 }
